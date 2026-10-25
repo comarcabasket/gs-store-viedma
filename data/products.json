@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "id": "p_mvoays0h_ibhd9",
+    "name": "iPhone 13 Pro Max",
+    "category": "iphone",
+    "subtitle": "Pantalla de 6,7″ · ProMotion 120 Hz",
+    "description": "El iPhone 13 Pro Max combina una pantalla Super Retina XDR de 6,7 pulgadas con tecnología ProMotion de hasta 120 Hz, chip A15 Bionic y un sistema de triple cámara de 12 MP.\n\nCuenta con conectividad 5G, Face ID, grabación de video en 4K y un rendimiento ideal para el uso diario, la fotografía y el entretenimiento.\n\nConsultanos por capacidades, colores y disponibilidad.",
+    "imageUrl": "/media/producto-1792962011449-e3c623e8f8.webp",
+    "features": [
+      "- Pantalla Super Retina XDR OLED de 6,7 pulgadas",
+      "- Tecnología ProMotion de hasta 120 Hz",
+      "- Procesador A15 Bionic",
+      "- Triple cámara trasera de 12 MP",
+      "- Cámara frontal TrueDepth de 12 MP",
+      "- Grabación de video en 4K",
+      "- Reconocimiento facial Face ID",
+      "- Conectividad 5G",
+      "- Carga inalámbrica MagSafe",
+      "- Resistencia al agua y polvo IP68 (certificación original)"
+    ],
+    "badge": "",
+    "price": 0,
+    "currency": "ARS",
+    "showPrice": false,
+    "published": true,
+    "featured": false,
+    "sortOrder": 0
+  }
+]
