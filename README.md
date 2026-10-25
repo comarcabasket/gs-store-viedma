@@ -4,7 +4,8 @@ Web responsiva para **GS Store Viedma**. No tiene carrito, pagos ni checkout: pr
 
 ## Qué incluye
 
-- Portada moderna con el **logo exacto** indicado para la marca.
+- Portada moderna con el **logo exacto** indicado para la marca. La portada muestra únicamente la presentación; el catálogo, el plan canje y el contacto se abren por separado desde la navegación.
+- Menú desplegable **Catálogo** con accesos directos a *Todos los productos*, *iPhone*, *Importados* y *Accesorios* (también funciona en dispositivos móviles). Cada categoría conserva su enlace compartible y los filtros del catálogo.
 - Tres secciones: **iPhone** (de entrada, «Consultá precio»), **Importados** («Consultá stock») y **Accesorios** (precio real).
 - Catálogo con búsqueda, filtros, fichas de producto, características y fotografías.
 - **Plan canje**: modelo, almacenamiento, batería, estado, observaciones y modelo deseado; prepara un WhatsApp completo, sin enviar datos automáticamente.
