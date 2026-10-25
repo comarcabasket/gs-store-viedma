@@ -7,12 +7,12 @@ Web responsiva para **GS Store Viedma**. No tiene carrito, pagos ni checkout: pr
 - Portada moderna con el **logo exacto** indicado para la marca. La portada muestra únicamente la presentación; el catálogo, el plan canje y el contacto se abren por separado desde la navegación.
 - Menú desplegable **Catálogo** con accesos directos a *Todos los productos*, *iPhone*, *Importados* y *Accesorios* (también funciona en dispositivos móviles). Cada categoría conserva su enlace compartible y los filtros del catálogo.
 - Tres secciones: **iPhone** (de entrada, «Consultá precio»), **Importados** («Consultá stock») y **Accesorios** (precio real).
-- Catálogo con búsqueda, filtros, fichas de producto, características y fotografías.
+- Catálogo con búsqueda, filtros y páginas individuales de producto, con enlaces que se pueden compartir, características y galerías de hasta 8 fotografías.
 - **Plan canje**: modelo, almacenamiento, batería, estado, observaciones y modelo deseado; prepara un WhatsApp completo, sin enviar datos automáticamente.
 - Contacto con links a WhatsApp e Instagram.
 - **Panel de administración privado**: `/admin.html` para crear, editar, despublicar y eliminar productos, además de cambiar los contactos y textos del sitio.
 - Persistencia real de los cambios mediante **commits a GitHub** usando funciones serverless de Vercel.
-- Subida directa de fotos desde el panel (JPG/PNG/WebP; se optimizan en el navegador y se almacenan en el repositorio).
+- Subida directa de hasta 8 fotos por producto desde el panel (JPG/PNG/WebP; se optimizan en el navegador y se almacenan en el repositorio). Permite elegir foto de portada, quitar fotos o sumar enlaces de imágenes.
 
 **Importante:** el catálogo viene vacío deliberadamente; no se muestran productos ni existencias inventadas. Tampoco se configuró un WhatsApp ni Instagram sin conocer los datos oficiales.
 
@@ -53,7 +53,7 @@ En GitHub: **Settings → Developer settings → Personal access tokens → Fine
 
 1. Visitá `https://TU-SITIO.vercel.app/admin.html` e ingresá tu `ADMIN_PASSWORD`.
 2. Abrí **Datos del sitio** para configurar WhatsApp en formato internacional **sin `+`** (Argentina suele usar `549` + número con área), URL y usuario de Instagram.
-3. Abrí **Productos**, elegí **Nuevo producto**, completá ficha, imagen y características.
+3. Abrí **Productos**, elegí **Nuevo producto**, completá ficha, una o varias fotos y características. La primera foto será la portada; desde la galería del panel podés marcar otra como portada.
 4. Usá **Aplicar cambios** y luego **Guardar catálogo en GitHub**. La edición de textos generales se guarda con su propio botón.
 5. Cada guardado crea un commit nuevo, por lo que el sitio se actualiza y Vercel vuelve a desplegar automáticamente. El sitio también consulta la versión actual de los contenidos guardados en GitHub.
 

@@ -1,4 +1,5 @@
 const shapes = {
+  image: '<rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m3 17 5-5 4 4 3-3 6 6"/>',
   arrow: '<path d="M5 12h14m-6-6 6 6-6 6"/>',
   northeast: '<path d="M7 17 17 7M8 7h9v9"/>',
   down: '<path d="m6 9 6 6 6-6"/>',

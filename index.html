@@ -44,6 +44,29 @@
 <div class="catalog-controls"><div class="tabs" role="tablist" aria-label="Filtrar por categoría"><button class="tab active" data-category="todos" role="tab" aria-selected="true">Todos</button><button class="tab" data-category="iphone" role="tab" aria-selected="false">iPhone</button><button class="tab" data-category="accesorios" role="tab" aria-selected="false">Accesorios</button><button class="tab" data-category="importados" role="tab" aria-selected="false">Importados</button></div><label class="search-box"><span data-icon="search"></span><input id="productSearch" type="search" placeholder="Buscar producto..." aria-label="Buscar productos"/></label></div>
 <div class="catalog-count" id="catalogCount" aria-live="polite">Explorando catálogo</div><div id="productGrid" class="products-grid"></div>
 </div></section>
+<section class="product-detail-section section-padding page-view" id="producto" data-page="producto" hidden>
+ <div class="container">
+  <div class="detail-navigation"><a href="#catalogo" id="detailBack" class="detail-back">← Volver al catálogo</a><span class="detail-caption">GS STORE VIEDMA / DETALLE DEL PRODUCTO</span></div>
+  <div class="product-detail-grid">
+   <div class="detail-gallery">
+    <div class="detail-main-image" id="detailMainImage" aria-live="polite"></div>
+    <div class="detail-thumbnails" id="detailThumbnails" aria-label="Fotografías del producto"></div>
+    <p class="detail-gallery-note">Imágenes ilustrativas o del equipo publicado. Consultanos por su estado y disponibilidad.</p>
+   </div>
+   <div class="detail-information">
+    <div class="eyebrow eyebrow-blue" id="detailCategory">/ PRODUCTO</div>
+    <h1 id="detailTitle"></h1>
+    <p class="detail-subtitle" id="detailSubtitle"></p>
+    <div class="detail-price" id="detailPrice"></div>
+    <p class="detail-description" id="detailDescription"></p>
+    <h2 class="detail-feature-heading">Características</h2>
+    <div id="detailSpecs" class="detail-specs"></div>
+    <a class="btn btn-primary detail-contact" href="#contacto" id="detailCTA">Consultar por WhatsApp <span data-icon="northeast"></span></a>
+    <p class="detail-help">Te ayudamos a resolver tus dudas y conocer la disponibilidad.</p>
+   </div>
+  </div>
+ </div>
+</section>
 <section class="trade-section section-padding page-view" id="canje" data-page="canje" hidden><div class="container trade-grid"><div class="trade-aside"><div class="eyebrow">/ 02 — PLAN CANJE</div><h2>Tu iPhone vale.<br/><em>Hacelo parte del cambio.</em></h2><p>¿Querés cambiar tu equipo? Contanos qué iPhone tenés y te ayudamos a cotizarlo para tu próximo paso.</p><div class="trade-steps"><div><span>01</span><p>Completá los datos de tu equipo</p></div><div><span>02</span><p>Contanos su estado actual</p></div><div><span>03</span><p>Enviá la consulta por WhatsApp</p></div></div><div class="trade-footnote"><span data-icon="shield"></span> Sin compromiso. La cotización final está sujeta a evaluación del equipo.</div></div>
 <div class="trade-panel"><div class="form-heading"><div class="pill-blue"><span data-icon="phone"></span> PLAN CANJE</div><h3>Cotizá tu iPhone</h3><p>Completá los campos y prepararemos tu mensaje de consulta.</p></div>
 <form id="tradeForm"><div class="form-two"><div class="form-field"><label for="tradeModel">Modelo de iPhone <span>*</span></label><input id="tradeModel" type="text" list="modelOptions" maxlength="60" required placeholder="Ej. iPhone 15 Pro"/><datalist id="modelOptions"></datalist></div><div class="form-field"><label for="tradeStorage">Almacenamiento <span>*</span></label><select id="tradeStorage" required><option value="" selected disabled>Seleccioná la capacidad</option><option>64 GB</option><option>128 GB</option><option>256 GB</option><option>512 GB</option><option>1 TB</option><option>2 TB</option><option value="Otro">Otro</option></select></div></div>
@@ -56,6 +79,5 @@
 <section class="contact-section section-padding page-view" id="contacto" data-page="contacto" hidden><div class="container contact-grid"><div><div class="eyebrow eyebrow-blue">/ 03 — CONTACTO</div><h2>¿Lo hablamos?</h2><p>Consultas sobre equipos, productos a pedido y accesorios. Estamos para ayudarte a encontrar lo que buscás.</p></div><div class="contact-links"><a class="contact-link" id="contactWhatsapp" href="#contacto"><span class="contact-icon" data-icon="message"></span><span><strong>WhatsApp</strong><small id="contactWhatsappDetail">Próximamente</small></span><span class="contact-go" data-icon="northeast"></span></a><a class="contact-link" id="contactInstagram" href="#contacto"><span class="contact-icon" data-icon="instagram"></span><span><strong>Instagram</strong><small id="contactInstagramDetail">Próximamente</small></span><span class="contact-go" data-icon="northeast"></span></a></div></div></section>
 </main>
 <footer class="footer"><div class="container footer-top"><a class="brand footer-brand" href="#inicio"><img src="https://i.ibb.co/Q7RyKNvF/Chat-GPT-Image-29-ago-2026-06-11-09-p-m.png" alt="Logo GS Store"/><span><strong>GS STORE</strong><small>VIEDMA</small></span></a><p>Tecnología seleccionada.<br/>Atención personalizada.</p><div class="footer-nav"><a href="#catalogo">Catálogo</a><a href="#canje">Plan canje</a><a href="#contacto">Contacto</a></div></div><div class="container footer-bottom"><span>© <span id="year"></span> GS Store Viedma · Todos los derechos reservados.</span><span>Viedma, Río Negro · Argentina</span></div></footer>
-<dialog class="product-dialog" id="productDialog" aria-labelledby="dialogTitle"><div class="dialog-layout"><button class="dialog-close" id="dialogClose" aria-label="Cerrar detalle"><span data-icon="close"></span></button><div id="dialogImage" class="dialog-image"></div><div class="dialog-info"><div class="eyebrow eyebrow-blue" id="dialogCategory"></div><h2 id="dialogTitle"></h2><p class="dialog-subtitle" id="dialogSubtitle"></p><div id="dialogPrice" class="dialog-price"></div><p id="dialogDescription" class="dialog-description"></p><div id="dialogSpecs" class="specs"></div><a id="dialogCTA" class="btn btn-primary dialog-cta" href="#contacto">Consultar producto <span data-icon="northeast"></span></a></div></div></dialog>
 <div id="toast" class="toast" role="status"></div>
 </body></html>
