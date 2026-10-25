@@ -120,6 +120,7 @@ function fillModels(){const models=['iPhone 18 Pro Max','iPhone 18 Pro','iPhone 
 
 function setupEvents(){
  icons();fillModels();
+ $('#homeCategoryJump').addEventListener('click',()=>$('#homeCategories').scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'}));
  $$('.tab').forEach(b=>b.addEventListener('click',()=>{
    const category=b.dataset.category;
    const next=category==='todos'?'#catalogo':`#catalogo/${category}`;

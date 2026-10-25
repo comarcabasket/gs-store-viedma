@@ -39,7 +39,43 @@
 <div class="hero-meta"><span class="meta-mark" data-icon="location"></span> Viedma · Río Negro <span class="meta-divider"></span> Atención personalizada</div>
 </div>
 <div class="hero-art" aria-hidden="true"><div class="hero-halo"></div><div class="phone phone-back"><div class="phone-camera"><i></i><i></i><i></i><b></b></div><div class="phone-brand">GS</div></div><div class="phone phone-front"><div class="phone-island"></div><div class="phone-display"><div class="display-light"></div><div class="display-text"><small>GS STORE</small><span>Elegí lo que sigue.</span></div></div></div><span class="art-label art-label-top">01 / TECNOLOGÍA</span><span class="art-label art-label-bottom">CURATED DEVICES — VIEDMA</span></div>
-</div><div class="hero-bottom-line"><div class="container"><span>SELECCIÓN DE TECNOLOGÍA</span><span>IPHONE · ACCESORIOS · IMPORTADOS</span><a href="#catalogo">DESCUBRÍ MÁS <span data-icon="down"></span></a></div></div></section>
+</div><div class="hero-bottom-line"><div class="container"><span>SELECCIÓN DE TECNOLOGÍA</span><span>IPHONE · ACCESORIOS · IMPORTADOS</span><button id="homeCategoryJump" type="button" aria-label="Ir a las categorías de GS Store">EXPLORÁ NUESTRAS CATEGORÍAS <span data-icon="down"></span></button></div></div></section>
+<section class="home-discover page-view" id="homeCategories" data-page="inicio" aria-labelledby="homeDiscoverTitle">
+ <div class="container">
+  <div class="home-discover-heading">
+   <div class="eyebrow eyebrow-blue"><span class="home-heading-line"></span> / EXPLORÁ GS STORE</div>
+   <div class="home-discover-headline">
+    <h2 id="homeDiscoverTitle">Encontrá lo que <span>estás buscando.</span></h2>
+    <p>Elegí una categoría para descubrir nuestra selección. Cada producto tiene su propia ficha, fotografías y un acceso directo para consultarnos.</p>
+   </div>
+  </div>
+  <div class="home-category-grid" aria-label="Categorías de productos">
+   <a class="home-category-card home-card-iphone" href="#catalogo/iphone" aria-label="Explorar catálogo de iPhone">
+    <div class="home-card-top"><span>01 / EQUIPOS</span><span class="home-card-arrow" aria-hidden="true" data-icon="northeast"></span></div>
+    <div class="home-card-illustration iphone-illustration" aria-hidden="true">
+     <div class="home-phone home-phone-back"><div class="home-camera"><i></i><i></i><i></i></div><span>GS</span></div>
+     <div class="home-phone home-phone-screen"><div class="home-island"></div><div class="home-screen-shine"></div></div>
+    </div>
+    <div class="home-card-copy"><span>Tu próximo equipo</span><h3>iPhone</h3><span class="home-card-action">Explorar modelos <span aria-hidden="true">↗</span></span></div>
+   </a>
+   <a class="home-category-card home-card-accessories" href="#catalogo/accesorios" aria-label="Explorar accesorios para iPhone">
+    <div class="home-card-top"><span>02 / COMPLEMENTOS</span><span class="home-card-arrow" aria-hidden="true" data-icon="northeast"></span></div>
+    <div class="home-card-illustration accessories-illustration" aria-hidden="true"><div class="accessories-case"><span></span></div><div class="accessories-charger"><span></span></div></div>
+    <div class="home-card-copy"><span>Los detalles cuentan</span><h3>Accesorios</h3><span class="home-card-action">Ver accesorios <span aria-hidden="true">↗</span></span></div>
+   </a>
+   <a class="home-category-card home-card-imports" href="#catalogo/importados" aria-label="Explorar productos importados">
+    <div class="home-card-top"><span>03 / A PEDIDO</span><span class="home-card-arrow" aria-hidden="true" data-icon="northeast"></span></div>
+    <div class="home-card-illustration imports-illustration" aria-hidden="true"><div class="imports-halo"></div><div class="imports-box imports-box-back"></div><div class="imports-box imports-box-front"><span>GS</span><i></i></div></div>
+    <div class="home-card-copy"><span>Más allá de los iPhone</span><h3>Importados</h3><span class="home-card-action">Descubrir productos <span aria-hidden="true">↗</span></span></div>
+   </a>
+  </div>
+  <div class="home-trade-link">
+   <div class="home-trade-mark" aria-hidden="true"><span data-icon="phone"></span></div>
+   <div><span class="home-trade-eyebrow">GS STORE / PLAN CANJE</span><h3>Tu iPhone también puede ser parte de tu próximo cambio.</h3><p>Contanos qué equipo tenés y solicitá una cotización por WhatsApp.</p></div>
+   <a href="#canje" class="home-trade-action">Cotizá tu iPhone <span data-icon="northeast"></span></a>
+  </div>
+ </div>
+</section>
 <section class="catalog-section section-padding page-view" id="catalogo" data-page="catalogo" hidden><div class="container"><div class="section-heading catalog-title"><div><div class="eyebrow eyebrow-blue" id="catalogEyebrow">/ 01 — CATÁLOGO</div><h2 id="catalogHeading">Descubrí nuestra <span class="soft-text">selección.</span></h2></div><p id="catalogDescription">Consultá disponibilidad y detalles de cada producto directamente con nosotros.</p></div>
 <div class="catalog-controls"><div class="tabs" role="tablist" aria-label="Filtrar por categoría"><button class="tab active" data-category="todos" role="tab" aria-selected="true">Todos</button><button class="tab" data-category="iphone" role="tab" aria-selected="false">iPhone</button><button class="tab" data-category="accesorios" role="tab" aria-selected="false">Accesorios</button><button class="tab" data-category="importados" role="tab" aria-selected="false">Importados</button></div><label class="search-box"><span data-icon="search"></span><input id="productSearch" type="search" placeholder="Buscar producto..." aria-label="Buscar productos"/></label></div>
 <div class="catalog-count" id="catalogCount" aria-live="polite">Explorando catálogo</div><div id="productGrid" class="products-grid"></div>
