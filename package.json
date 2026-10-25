@@ -1,0 +1,11 @@
+{
+  "name": "gs-store-viedma-catalogo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Catálogo digital de GS Store Viedma con administración por GitHub y plan canje por WhatsApp.",
+  "scripts": {
+    "dev": "node dev-server.mjs",
+    "check": "node --check assets/store.js && node --check assets/admin.js && node --check api/login.js && node --check api/content.js && node --check api/upload.js"
+  },
+  "engines": { "node": ">=20" }
+}
