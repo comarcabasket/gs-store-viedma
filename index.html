@@ -93,7 +93,14 @@
 </section>
 <section class="catalog-section section-padding page-view" id="catalogo" data-page="catalogo" hidden><div class="container"><div class="section-heading catalog-title"><div><div class="eyebrow eyebrow-blue" id="catalogEyebrow">/ 01 — CATÁLOGO</div><h2 id="catalogHeading">Descubrí nuestra <span class="soft-text">selección.</span></h2></div><p id="catalogDescription">Consultá disponibilidad y detalles de cada producto directamente con nosotros.</p></div>
 <div class="catalog-controls"><div class="tabs" role="tablist" aria-label="Filtrar por categoría"><button class="tab active" data-category="todos" role="tab" aria-selected="true">Todos</button><button class="tab" data-category="iphone" role="tab" aria-selected="false">iPhone</button><button class="tab" data-category="accesorios" role="tab" aria-selected="false">Accesorios</button><button class="tab" data-category="importados" role="tab" aria-selected="false">Importados</button></div><label class="search-box"><span data-icon="search"></span><input id="productSearch" type="search" placeholder="Buscar producto..." aria-label="Buscar productos"/></label></div>
-<div class="catalog-count" id="catalogCount" aria-live="polite">Explorando catálogo</div><div id="productGrid" class="products-grid"></div>
+<div class="catalog-result-bar">
+  <div class="catalog-count" id="catalogCount" aria-live="polite">Explorando catálogo</div>
+  <div class="catalog-sort-actions">
+    <button type="button" id="clearCatalogSearch" class="catalog-clear" hidden>Limpiar búsqueda</button>
+    <label class="catalog-sort" for="catalogSort"><span>Ordenar</span><select id="catalogSort" aria-label="Ordenar catálogo"><option value="default">Orden de la tienda</option><option value="az">Nombre A–Z</option><option value="za">Nombre Z–A</option></select></label>
+  </div>
+</div>
+<div id="productGrid" class="products-grid"></div>
 </div></section>
 <section class="product-detail-section section-padding page-view" id="producto" data-page="producto" hidden>
  <div class="container">
@@ -113,6 +120,7 @@
     <h2 class="detail-feature-heading">Características</h2>
     <div id="detailSpecs" class="detail-specs"></div>
     <a class="btn btn-primary detail-contact" href="#contacto" id="detailCTA">Consultar por WhatsApp <span data-icon="northeast"></span></a>
+    <button type="button" id="detailShare" class="detail-share">Compartir ficha del producto <span data-icon="copy"></span></button>
     <p class="detail-help">Te ayudamos a resolver tus dudas y conocer la disponibilidad.</p>
    </div>
   </div>

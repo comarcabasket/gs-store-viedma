@@ -1,6 +1,7 @@
 import {ico} from './icons.js';
 import {$,$$,escapeHTML,categories,linkWhatsApp,normalizePhone,getCTA,productMessage,fetchJSON,toast} from './shared.js';
 let site={},allProducts=[],activeCategory='todos',searchQuery='',currentDetailId='',currentPhotoIndex=0;
+let catalogSort='default';
 const validCategories=new Set(['todos','iphone','accesorios','importados']);
 const catalogDetails={
  todos:{eyebrow:'/ 01 — CATÁLOGO',title:'Descubrí nuestra <span class="soft-text">selección.</span>',description:'Consultá disponibilidad y detalles de cada producto directamente con nosotros.'},
@@ -79,11 +80,28 @@ function getProductImages(p){
  if(original&&!images.includes(original))images.unshift(original);
  return images.slice(0,8);
 }
+function normalizeSearch(value){return String(value||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('es-AR').trim();}
 function renderProducts(){
  const published=allProducts.filter(p=>p.published!==false);
- const items=published.filter(p=>(activeCategory==='todos'||p.category===activeCategory)&&`${p.name} ${p.subtitle||''} ${p.description||''}`.toLowerCase().includes(searchQuery));
+ const terms=normalizeSearch(searchQuery).split(/\s+/).filter(Boolean);
+ const items=published.filter(p=>{
+   if(activeCategory!=='todos'&&p.category!==activeCategory)return false;
+   const haystack=normalizeSearch([p.name,p.subtitle,p.description,p.badge,(p.features||[]).join(' '),categories[p.category]].join(' '));
+   return terms.every(term=>haystack.includes(term));
+ });
+ if(catalogSort==='az'||catalogSort==='za')items.sort((a,b)=>catalogSort==='az'?a.name.localeCompare(b.name,'es',{numeric:true}):b.name.localeCompare(a.name,'es',{numeric:true}));
  $('#catalogCount').textContent=items.length===1?'1 producto':`${items.length} productos`;
- if(!items.length){const noProducts=published.length===0;$('#productGrid').innerHTML=`<div class="empty-state"><div class="empty-icon">${ico(noProducts?'bag':'search',23)}</div><h3>${noProducts?'Estamos preparando nuestro catálogo.':'No encontramos coincidencias.'}</h3><p>${noProducts?'Muy pronto vas a poder explorar nuestros productos. Mientras tanto, podés consultarnos directamente.':'Probá con otra palabra o seleccioná una categoría diferente.'}</p><a class="btn btn-primary" href="#contacto">${noProducts?'Hacer una consulta':'Contactanos'} ${ico('arrow',15)}</a></div>`;return;}
+ $('#clearCatalogSearch').hidden=!terms.length;
+ if(!items.length){
+  const noProducts=published.length===0;
+  const noCategoryProducts=!noProducts&&!terms.length&&activeCategory!=='todos';
+  const heading=noProducts?'Estamos preparando nuestro catálogo.':noCategoryProducts?'Pronto habrá novedades en esta categoría.':'No encontramos coincidencias.';
+  const message=noProducts?'Mientras tanto, podés consultarnos por WhatsApp.':noCategoryProducts?'Podés explorar las otras categorías o consultarnos por disponibilidad.':'Probá con otra palabra o limpiá la búsqueda.';
+  const target=noProducts?'#contacto':'#catalogo';
+  const button=noProducts?'Hacer una consulta':'Ver todo el catálogo';
+  $('#productGrid').innerHTML=`<div class="empty-state"><div class="empty-icon">${ico(noProducts||noCategoryProducts?'bag':'search',23)}</div><h3>${heading}</h3><p>${message}</p><a class="btn btn-primary" href="${target}">${button} ${ico('arrow',15)}</a></div>`;
+  return;
+ }
  $('#productGrid').innerHTML=items.map(p=>{
   const image=getProductImages(p)[0];const photos=getProductImages(p).length;
   return `<a href="#producto/${encodeURIComponent(p.id)}" class="product-card" aria-label="Ver ${escapeHTML(p.name)}: fotos, características y consulta"><div class="product-image">${image?`<img loading="lazy" decoding="async" src="${escapeHTML(image)}" alt="${escapeHTML(p.name)}"/>`:`<div class="product-fallback">GS</div>`}${p.badge?`<span class="product-badge">${escapeHTML(p.badge)}</span>`:''}${photos>1?`<span class="photo-count">${ico('image',13)} ${photos} fotos</span>`:''}</div><div class="product-body"><div class="product-category">${escapeHTML(categories[p.category]||p.category)}</div><h3>${escapeHTML(p.name)}</h3><p>${escapeHTML(p.subtitle||'')}</p></div><div class="product-card-cta"><span>${escapeHTML(getCTA(p))}</span>${ico('arrow',18)}</div></a>`;
@@ -94,11 +112,25 @@ function renderProducts(){
    img.replaceWith(placeholder);
  },{once:true}));
 }
+async function shareCurrentProduct(){
+ const p=allProducts.find(item=>item.id===currentDetailId&&item.published!==false);
+ if(!p)return;
+ const url=location.origin+location.pathname+'#producto/'+encodeURIComponent(p.id);
+ const title=p.name+' | GS Store Viedma';
+ if(navigator.share){
+   try{await navigator.share({title,text:'Mirá este producto de GS Store Viedma',url});return;}
+   catch(error){if(error?.name==='AbortError')return;}
+ }
+ try{await navigator.clipboard.writeText(url);toast('Enlace del producto copiado.');}
+ catch{toast('No fue posible copiar el enlace automáticamente.');}
+}
 function renderProductDetail(id){
  const p=allProducts.find(p=>p.id===id&&p.published!==false);
  if(!p){
+  $('#detailShare').hidden=true;
   currentDetailId='';$('#detailTitle').textContent='Producto no disponible';$('#detailCategory').textContent='/ CATÁLOGO';$('#detailSubtitle').textContent='';$('#detailPrice').textContent='';$('#detailDescription').textContent='Este producto no está publicado o ya no forma parte del catálogo.';$('#detailSpecs').innerHTML='';$('#detailMainImage').innerHTML='<div class="product-fallback">GS</div>';$('#detailThumbnails').innerHTML='';$('#detailCTA').href='#catalogo';$('#detailCTA').textContent='Volver al catálogo';return;
  }
+ $('#detailShare').hidden=false;
  if(currentDetailId!==id){currentPhotoIndex=0;currentDetailId=id;}
  $('#detailCategory').textContent=`/ ${categories[p.category]||'PRODUCTO'}`;
  $('#detailTitle').textContent=p.name;$('#detailSubtitle').textContent=p.subtitle||'';
@@ -160,7 +192,10 @@ function setupEvents(){
  document.addEventListener('click',event=>{if(!$('#catalogDropdown').contains(event.target))closeCatalogDropdown();});
  document.addEventListener('keydown',event=>{if(event.key==='Escape')closeCatalogDropdown();});
  window.addEventListener('hashchange',showRoute);
- $('#productSearch').addEventListener('input',e=>{searchQuery=e.target.value.toLowerCase().trim();renderProducts();});
+ $('#productSearch').addEventListener('input',e=>{searchQuery=e.target.value;renderProducts();});
+ $('#clearCatalogSearch').addEventListener('click',()=>{searchQuery='';$('#productSearch').value='';renderProducts();$('#productSearch').focus();});
+ $('#catalogSort').addEventListener('change',e=>{catalogSort=e.target.value;renderProducts();});
+ $('#detailShare').addEventListener('click',shareCurrentProduct);
  $('#menuToggle').addEventListener('click',()=>{
    const open=$('#navLinks').classList.toggle('open');
    $('#menuToggle').setAttribute('aria-expanded',String(open));
