@@ -103,15 +103,55 @@
   </div>
  </div>
 </section>
-<section class="trade-section section-padding page-view" id="canje" data-page="canje" hidden><div class="container trade-grid"><div class="trade-aside"><div class="eyebrow">/ 02 — PLAN CANJE</div><h2>Tu iPhone vale.<br/><em>Hacelo parte del cambio.</em></h2><p>¿Querés cambiar tu equipo? Contanos qué iPhone tenés y te ayudamos a cotizarlo para tu próximo paso.</p><div class="trade-steps"><div><span>01</span><p>Completá los datos de tu equipo</p></div><div><span>02</span><p>Contanos su estado actual</p></div><div><span>03</span><p>Enviá la consulta por WhatsApp</p></div></div><div class="trade-footnote"><span data-icon="shield"></span> Sin compromiso. La cotización final está sujeta a evaluación del equipo.</div></div>
-<div class="trade-panel"><div class="form-heading"><div class="pill-blue"><span data-icon="phone"></span> PLAN CANJE</div><h3>Cotizá tu iPhone</h3><p>Completá los campos y prepararemos tu mensaje de consulta.</p></div>
-<form id="tradeForm"><div class="form-two"><div class="form-field"><label for="tradeModel">Modelo de iPhone <span>*</span></label><input id="tradeModel" type="text" list="modelOptions" maxlength="60" required placeholder="Ej. iPhone 15 Pro"/><datalist id="modelOptions"></datalist></div><div class="form-field"><label for="tradeStorage">Almacenamiento <span>*</span></label><select id="tradeStorage" required><option value="" selected disabled>Seleccioná la capacidad</option><option>64 GB</option><option>128 GB</option><option>256 GB</option><option>512 GB</option><option>1 TB</option><option>2 TB</option><option value="Otro">Otro</option></select></div></div>
-<div class="form-field battery-field"><label for="tradeBattery">Salud de la batería <span>*</span></label><div class="battery-input"><span data-icon="battery"></span><input type="number" id="tradeBattery" min="1" max="100" inputmode="numeric" placeholder="Ej. 86" required/><span>%</span></div></div>
-<div class="form-field"><label for="tradeCondition">Estado general <span>*</span></label><select id="tradeCondition" required><option value="" selected disabled>Seleccioná el estado de tu equipo</option><option>Excelente — sin detalles</option><option>Bueno — marcas leves de uso</option><option>Regular — detalles estéticos visibles</option><option>Con fallas de funcionamiento</option></select></div>
-<div class="form-field"><label for="tradeDetails">¿Tiene algún detalle? <span class="optional">Opcional</span></label><textarea id="tradeDetails" rows="3" maxlength="500" placeholder="Pantalla, cámaras, Face ID, golpes, reparaciones, etc."></textarea></div>
-<div class="form-field"><label for="tradeWanted">¿Qué equipo te gustaría llevar? <span class="optional">Opcional</span></label><input id="tradeWanted" type="text" maxlength="80" placeholder="Ej. iPhone 16 Pro"/></div>
-<button class="btn btn-primary submit-trade" type="submit">Solicitar cotización <span data-icon="northeast"></span></button><div class="form-note">Se abrirá WhatsApp con el mensaje preparado. No enviamos tus datos automáticamente.</div><button class="text-copy" id="copyTrade" type="button">Copiar mensaje de cotización</button><div class="form-status" id="tradeStatus" role="status"></div>
-</form></div></div></section>
+<section class="trade-section page-view" id="canje" data-page="canje" hidden>
+  <div class="trade-intro-wrap">
+    <div class="container trade-intro">
+      <div class="trade-intro-copy">
+        <div class="trade-kicker"><span class="trade-kicker-dot"></span> GS STORE VIEDMA <span>/</span> PLAN CANJE</div>
+        <h2>Lo que tenés hoy,<br/><em>te acerca a lo que viene.</em></h2>
+        <p>Tu iPhone puede ser parte de tu próximo equipo. Contanos qué modelo tenés y en qué estado está para solicitar una cotización personalizada.</p>
+        <div class="trade-intro-tags"><span><span data-icon="check"></span> Consulta sin compromiso</span><span><span data-icon="message"></span> Atención por WhatsApp</span></div>
+      </div>
+      <div class="trade-visual" aria-hidden="true">
+        <div class="trade-visual-glow"></div>
+        <div class="trade-device trade-device-current"><div class="trade-device-camera"><i></i><i></i></div><span>GS</span></div>
+        <div class="trade-exchange-mark"><span data-icon="arrow"></span></div>
+        <div class="trade-device trade-device-next"><div class="trade-device-screen"><div class="trade-device-island"></div><span>GS STORE</span><strong>Lo que sigue.</strong></div></div>
+        <span class="trade-visual-caption trade-caption-a">01 / TU EQUIPO</span><span class="trade-visual-caption trade-caption-b">02 / TU PRÓXIMO PASO</span>
+      </div>
+    </div>
+  </div>
+  <div class="trade-form-area">
+    <div class="container trade-main">
+      <aside class="trade-guide">
+        <div class="trade-guide-kicker">/ CÓMO FUNCIONA</div>
+        <h3>Simple, desde el <span>primer paso.</span></h3>
+        <div class="trade-guide-steps">
+          <div class="trade-guide-step"><span class="trade-step-number">01</span><div><strong>Contanos qué equipo tenés</strong><p>Modelo, capacidad y salud de batería.</p></div></div>
+          <div class="trade-guide-step"><span class="trade-step-number">02</span><div><strong>Describí su estado</strong><p>Indicá si tiene marcas, reparaciones o algún detalle.</p></div></div>
+          <div class="trade-guide-step"><span class="trade-step-number">03</span><div><strong>Enviá tu consulta</strong><p>Se abrirá WhatsApp con todos los datos preparados.</p></div></div>
+        </div>
+        <div class="trade-guide-note"><span data-icon="shield"></span><p>La cotización final está sujeta a la evaluación del equipo. No hay compromiso de canje.</p></div>
+      </aside>
+      <div class="trade-panel">
+        <div class="trade-panel-topline"><span class="pill-blue"><span data-icon="phone"></span> COTIZACIÓN DE IPHONE</span><span class="trade-form-counter">GS / 01</span></div>
+        <div class="form-heading"><h3>Hablemos de tu iPhone.</h3><p>Completá estos datos y prepararemos tu mensaje para WhatsApp.</p></div>
+        <form id="tradeForm">
+          <div class="trade-fields-heading"><span>01</span><strong>Datos de tu equipo</strong><i></i></div>
+          <div class="form-two"><div class="form-field"><label for="tradeModel">Modelo de iPhone <span>*</span></label><input id="tradeModel" type="text" list="modelOptions" maxlength="60" autocomplete="off" required placeholder="Ej. iPhone 15 Pro"/><datalist id="modelOptions"></datalist></div><div class="form-field"><label for="tradeStorage">Almacenamiento <span>*</span></label><select id="tradeStorage" required><option value="" selected disabled>Seleccioná la capacidad</option><option>64 GB</option><option>128 GB</option><option>256 GB</option><option>512 GB</option><option>1 TB</option><option>2 TB</option><option value="Otro">Otro</option></select></div></div>
+          <div class="form-field battery-field"><label for="tradeBattery">Salud de la batería <span>*</span></label><div class="battery-input"><span data-icon="battery"></span><input type="number" id="tradeBattery" min="1" max="100" inputmode="numeric" placeholder="Ej. 86" required/><span>%</span></div></div>
+          <div class="trade-fields-heading trade-fields-second"><span>02</span><strong>Estado y preferencias</strong><i></i></div>
+          <div class="form-field"><label for="tradeCondition">Estado general <span>*</span></label><select id="tradeCondition" required><option value="" selected disabled>Seleccioná el estado de tu equipo</option><option>Excelente — sin detalles</option><option>Bueno — marcas leves de uso</option><option>Regular — detalles estéticos visibles</option><option>Con fallas de funcionamiento</option></select></div>
+          <div class="form-field"><label for="tradeDetails">¿Tiene algún detalle? <span class="optional">Opcional</span></label><textarea id="tradeDetails" rows="3" maxlength="500" placeholder="Pantalla, cámaras, Face ID, golpes, reparaciones, etc."></textarea></div>
+          <div class="form-field"><label for="tradeWanted">¿Qué equipo te gustaría llevar? <span class="optional">Opcional</span></label><input id="tradeWanted" type="text" maxlength="80" placeholder="Ej. iPhone 16 Pro"/></div>
+          <button class="btn btn-primary submit-trade" type="submit"><span>Solicitar cotización por WhatsApp</span><span class="trade-submit-arrow" data-icon="northeast"></span></button>
+          <div class="trade-form-privacy"><span data-icon="shield"></span><span>Revisás el mensaje antes de enviarlo. No compartimos tus datos automáticamente.</span></div>
+          <button class="text-copy" id="copyTrade" type="button">Copiar mensaje de cotización</button><div class="form-status" id="tradeStatus" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="contact-section section-padding page-view" id="contacto" data-page="contacto" hidden><div class="container contact-grid"><div><div class="eyebrow eyebrow-blue">/ 03 — CONTACTO</div><h2>¿Lo hablamos?</h2><p>Consultas sobre equipos, productos a pedido y accesorios. Estamos para ayudarte a encontrar lo que buscás.</p></div><div class="contact-links"><a class="contact-link" id="contactWhatsapp" href="#contacto"><span class="contact-icon" data-icon="message"></span><span><strong>WhatsApp</strong><small id="contactWhatsappDetail">Próximamente</small></span><span class="contact-go" data-icon="northeast"></span></a><a class="contact-link" id="contactInstagram" href="#contacto"><span class="contact-icon" data-icon="instagram"></span><span><strong>Instagram</strong><small id="contactInstagramDetail">Próximamente</small></span><span class="contact-go" data-icon="northeast"></span></a></div></div></section>
 </main>
 <footer class="footer"><div class="container footer-top"><a class="brand footer-brand" href="#inicio"><img src="https://i.ibb.co/Q7RyKNvF/Chat-GPT-Image-29-ago-2026-06-11-09-p-m.png" alt="Logo GS Store"/><span><strong>GS STORE</strong><small>VIEDMA</small></span></a><p>Tecnología seleccionada.<br/>Atención personalizada.</p><div class="footer-nav"><a href="#catalogo">Catálogo</a><a href="#canje">Plan canje</a><a href="#contacto">Contacto</a></div></div><div class="container footer-bottom"><span>© <span id="year"></span> GS Store Viedma · Todos los derechos reservados.</span><span>Viedma, Río Negro · Argentina</span></div></footer>
