@@ -143,11 +143,37 @@ function renderProductDetail(id){
  cta.innerHTML=`${p.category==='importados'?'Consultar stock':p.category==='iphone'?'Consultar precio y disponibilidad':'Consultar por WhatsApp'} ${ico('northeast',17)}`;
  renderProductGallery(p);
 }
+function currentProduct(){return allProducts.find(p=>p.id===currentDetailId&&p.published!==false);}
+function updateLightbox(){
+ const dialog=$('#imageLightbox');if(!dialog.open)return;
+ const product=currentProduct();const images=product?getProductImages(product):[];
+ if(!images.length){dialog.close();return;}
+ currentPhotoIndex=(currentPhotoIndex+images.length)%images.length;
+ const image=$('#lightboxPhoto');
+ image.src=images[currentPhotoIndex];
+ image.alt=`${product.name} — fotografía ${currentPhotoIndex+1} de ${images.length}`;
+ $('#lightboxTitle').textContent=product.name;
+ $('#lightboxCount').textContent=`${currentPhotoIndex+1} de ${images.length}`;
+ $('#lightboxPrev').hidden=images.length<2;
+ $('#lightboxNext').hidden=images.length<2;
+ $('#lightboxThumbnails').innerHTML=images.length>1?images.map((src,i)=>`<button type="button" class="lightbox-thumb ${i===currentPhotoIndex?'active':''}" data-lightbox-index="${i}" aria-label="Ver fotografía ${i+1}" aria-pressed="${i===currentPhotoIndex}"><img loading="lazy" src="${escapeHTML(src)}" alt=""/></button>`).join(''):'';
+}
+function openLightbox(){
+ const product=currentProduct();if(!product||!getProductImages(product).length)return;
+ const dialog=$('#imageLightbox');if(!dialog.open)dialog.showModal();
+ updateLightbox();
+}
+function moveLightbox(direction){
+ const product=currentProduct();if(!product)return;
+ const images=getProductImages(product);if(images.length<2)return;
+ currentPhotoIndex=(currentPhotoIndex+direction+images.length)%images.length;
+ renderProductGallery(product);updateLightbox();
+}
 function renderProductGallery(p){
  const images=getProductImages(p);
  if(currentPhotoIndex>=images.length)currentPhotoIndex=0;
  const image=images[currentPhotoIndex];
- $('#detailMainImage').innerHTML=image?`${images.length>1?`<button type="button" class="gallery-arrow previous" data-gallery-step="-1" aria-label="Foto anterior">${ico('arrow',22)}</button>`:''}<img src="${escapeHTML(image)}" decoding="async" alt="${escapeHTML(p.name)} — fotografía ${currentPhotoIndex+1} de ${images.length}"/>${images.length>1?`<button type="button" class="gallery-arrow next" data-gallery-step="1" aria-label="Foto siguiente">${ico('arrow',22)}</button>`:''}<span class="gallery-position">${currentPhotoIndex+1} / ${images.length}</span>`:'<div class="product-fallback">GS</div>';
+ $('#detailMainImage').innerHTML=image?`${images.length>1?`<button type="button" class="gallery-arrow previous" data-gallery-step="-1" aria-label="Foto anterior">${ico('arrow',22)}</button>`:''}<img src="${escapeHTML(image)}" decoding="async" alt="${escapeHTML(p.name)} — fotografía ${currentPhotoIndex+1} de ${images.length}"/>${images.length>1?`<button type="button" class="gallery-arrow next" data-gallery-step="1" aria-label="Foto siguiente">${ico('arrow',22)}</button>`:''}<button type="button" class="gallery-enlarge" aria-label="Ampliar fotografía a pantalla completa">${ico('image',15)}<span>Ampliar foto</span></button><span class="gallery-position">${currentPhotoIndex+1} / ${images.length}</span>`:'<div class="product-fallback">GS</div>';
  const mainImage=$('#detailMainImage img');
  if(mainImage)mainImage.addEventListener('error',()=>{
    const fallback=document.createElement('div');fallback.className='product-fallback';fallback.textContent='Imagen no disponible';
@@ -191,7 +217,7 @@ function setupEvents(){
  });
  document.addEventListener('click',event=>{if(!$('#catalogDropdown').contains(event.target))closeCatalogDropdown();});
  document.addEventListener('keydown',event=>{if(event.key==='Escape')closeCatalogDropdown();});
- window.addEventListener('hashchange',showRoute);
+ window.addEventListener('hashchange',()=>{if($('#imageLightbox').open)$('#imageLightbox').close();showRoute();});
  $('#productSearch').addEventListener('input',e=>{searchQuery=e.target.value;renderProducts();});
  $('#clearCatalogSearch').addEventListener('click',()=>{searchQuery='';$('#productSearch').value='';renderProducts();$('#productSearch').focus();});
  $('#catalogSort').addEventListener('change',e=>{catalogSort=e.target.value;renderProducts();});
@@ -209,6 +235,36 @@ function setupEvents(){
  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&$('#navLinks').classList.contains('open'))closeMobileNav();});
  window.addEventListener('resize',()=>{if(window.innerWidth>800&&$('#navLinks').classList.contains('open'))closeMobileNav();});
  $$('.nav-links a').forEach(a=>a.addEventListener('click',()=>closeMobileNav()));
+ $('#detailMainImage').addEventListener('click',event=>{
+  if(event.target.closest('[data-gallery-step]'))return;
+  if(event.target.closest('img,.gallery-enlarge'))openLightbox();
+ });
+ $('#lightboxClose').addEventListener('click',()=>$('#imageLightbox').close());
+ $('#imageLightbox').addEventListener('click',event=>{if(event.target===$('#imageLightbox'))$('#imageLightbox').close();});
+ $('#lightboxPrev').addEventListener('click',()=>moveLightbox(-1));
+ $('#lightboxNext').addEventListener('click',()=>moveLightbox(1));
+ $('#lightboxThumbnails').addEventListener('click',event=>{
+  const button=event.target.closest('[data-lightbox-index]');if(!button)return;
+  const product=currentProduct();if(!product)return;
+  currentPhotoIndex=Number(button.dataset.lightboxIndex);
+  renderProductGallery(product);updateLightbox();
+ });
+ $('#imageLightbox').addEventListener('keydown',event=>{
+  if(event.key==='ArrowLeft'||event.key==='ArrowRight'){
+   event.preventDefault();moveLightbox(event.key==='ArrowLeft'?-1:1);
+  }
+ });
+ let lightboxTouch=null;
+ $('#lightboxStage').addEventListener('touchstart',event=>{
+  const touch=event.changedTouches[0];if(touch)lightboxTouch={x:touch.clientX,y:touch.clientY};
+ },{passive:true});
+ $('#lightboxStage').addEventListener('touchend',event=>{
+  if(!lightboxTouch)return;
+  const touch=event.changedTouches[0];if(!touch)return;
+  const dx=touch.clientX-lightboxTouch.x,dy=touch.clientY-lightboxTouch.y;
+  lightboxTouch=null;
+  if(Math.abs(dx)>48&&Math.abs(dx)>Math.abs(dy)*1.2)moveLightbox(dx<0?1:-1);
+ },{passive:true});
  $('#detailMainImage').addEventListener('keydown',e=>{if(!['ArrowLeft','ArrowRight'].includes(e.key))return;const p=allProducts.find(p=>p.id===currentDetailId);const photos=p?getProductImages(p):[];if(photos.length<2)return;e.preventDefault();currentPhotoIndex=(currentPhotoIndex+(e.key==='ArrowRight'?1:-1)+photos.length)%photos.length;renderProductGallery(p);});
  $('#tradeForm').addEventListener('submit',e=>{e.preventDefault();validTradeModel();if(!e.target.reportValidity())return;const url=linkWhatsApp(site.whatsappNumber,makeTradeMessage());if(!url){$('#tradeStatus').textContent='El número de WhatsApp todavía no está configurado. Podés copiar el mensaje y enviarlo por otro medio.';return;}$('#tradeStatus').textContent='Se abrió WhatsApp. Revisá el mensaje y presioná enviar.';window.open(url,'_blank','noopener,noreferrer');});
  $('#copyTrade').addEventListener('click',async()=>{validTradeModel();if(!$('#tradeForm').reportValidity())return;try{await navigator.clipboard.writeText(makeTradeMessage());toast('Mensaje copiado.');}catch{toast('No se pudo copiar automáticamente.');}});
