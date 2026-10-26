@@ -27,8 +27,30 @@ function getRoute(){
  if(match)return {page:'catalogo',category:match[1]};
  return {page:'inicio'};
 }
+let activeRouteKey = null;
+let fallbackTransitionTimer = null;
+const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+function routeKey(route){return [route.page,route.category||'',route.id||''].join('/');}
 function showRoute(){
  const route=getRoute();
+ const key=routeKey(route);
+ const change=activeRouteKey!==null&&key!==activeRouteKey;
+ if(fallbackTransitionTimer!==null){window.clearTimeout(fallbackTransitionTimer);fallbackTransitionTimer=null;}
+ const main=$('main');
+ main.classList.remove('gs-route-leaving','gs-route-entering');
+ // La primera carga no se anima; solo los cambios de sección posteriores.
+ if(!change||motionPreference.matches){applyRoute(route);activeRouteKey=key;return;}
+ // Alternativa para navegadores sin View Transitions: salida y entrada suaves.
+ main.classList.add('gs-route-leaving');
+ fallbackTransitionTimer=window.setTimeout(()=>{
+  fallbackTransitionTimer=null;
+  applyRoute(getRoute());
+  activeRouteKey=routeKey(getRoute());
+  main.classList.remove('gs-route-leaving');
+  main.classList.add('gs-route-entering');
+ },140);
+}
+function applyRoute(route){
  $$('.page-view').forEach(view=>{view.hidden=view.dataset.page!==route.page;});
  $$('.nav-page-link').forEach(link=>{
    const selected=link.getAttribute('href')==='#'+route.page;
