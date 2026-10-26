@@ -1,33 +1,462 @@
 [
   {
-    "id": "p_mvoays0h_ibhd9",
-    "name": "iPhone 13 Pro Max",
+    "id": "p_iphone_13",
     "category": "iphone",
+    "name": "iPhone 13",
+    "subtitle": "Super Retina XDR de 6,1″ · Chip A15 Bionic",
+    "description": "Explorá el iPhone 13 y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
+    "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13.jpg",
+    "images": [
+      "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13.jpg"
+    ],
+    "features": [
+      "Pantalla Super Retina XDR OLED de 6,1 pulgadas",
+      "Chip A15 Bionic",
+      "Doble cámara trasera de 12 MP",
+      "Cámara frontal TrueDepth de 12 MP",
+      "Conectividad 5G",
+      "Face ID",
+      "Compatibilidad con MagSafe"
+    ],
+    "price": 0,
+    "currency": "ARS",
+    "showPrice": false,
+    "published": true,
+    "featured": false,
+    "sortOrder": 1,
+    "badge": ""
+  },
+  {
+    "id": "p_iphone_13_pro",
+    "category": "iphone",
+    "name": "iPhone 13 Pro",
+    "subtitle": "ProMotion 120 Hz · Chip A15 Bionic",
+    "description": "Explorá el iPhone 13 Pro y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
+    "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-pro.jpg",
+    "images": [
+      "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-pro.jpg"
+    ],
+    "features": [
+      "Pantalla Super Retina XDR de 6,1 pulgadas con ProMotion",
+      "Chip A15 Bionic",
+      "Triple cámara trasera de 12 MP",
+      "Teleobjetivo y modo macro",
+      "Grabación de video en ProRes",
+      "Conectividad 5G",
+      "Compatibilidad con MagSafe"
+    ],
+    "price": 0,
+    "currency": "ARS",
+    "showPrice": false,
+    "published": true,
+    "featured": false,
+    "sortOrder": 2,
+    "badge": ""
+  },
+  {
+    "id": "p_mvoays0h_ibhd9",
+    "category": "iphone",
+    "name": "iPhone 13 Pro Max",
     "subtitle": "Pantalla de 6,7″ · ProMotion 120 Hz",
-    "description": "El iPhone 13 Pro Max combina una pantalla Super Retina XDR de 6,7 pulgadas con tecnología ProMotion de hasta 120 Hz, chip A15 Bionic y un sistema de triple cámara de 12 MP.\n\nCuenta con conectividad 5G, Face ID, grabación de video en 4K y un rendimiento ideal para el uso diario, la fotografía y el entretenimiento.\n\nConsultanos por capacidades, colores y disponibilidad.",
+    "description": "Explorá el iPhone 13 Pro Max y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
     "imageUrl": "/media/producto-1792962011449-e3c623e8f8.webp",
     "images": [
       "/media/producto-1792962011449-e3c623e8f8.webp",
       "/media/producto-1792963135076-087e2383a4.webp"
     ],
     "features": [
-      "- Pantalla Super Retina XDR OLED de 6,7 pulgadas",
-      "- Tecnología ProMotion de hasta 120 Hz",
-      "- Procesador A15 Bionic",
-      "- Triple cámara trasera de 12 MP",
-      "- Cámara frontal TrueDepth de 12 MP",
-      "- Grabación de video en 4K",
-      "- Reconocimiento facial Face ID",
-      "- Conectividad 5G",
-      "- Carga inalámbrica MagSafe",
-      "- Resistencia al agua y polvo IP68 (certificación original)"
+      "Pantalla Super Retina XDR de 6,7 pulgadas con ProMotion",
+      "Chip A15 Bionic",
+      "Triple cámara trasera de 12 MP",
+      "Teleobjetivo y modo macro",
+      "Grabación de video en ProRes",
+      "Conectividad 5G",
+      "Compatibilidad con MagSafe"
     ],
-    "badge": "",
     "price": 0,
     "currency": "ARS",
     "showPrice": false,
     "published": true,
     "featured": false,
-    "sortOrder": 0
+    "sortOrder": 3,
+    "badge": ""
+  },
+  {
+    "id": "p_iphone_14",
+    "category": "iphone",
+    "name": "iPhone 14",
+    "subtitle": "Super Retina XDR de 6,1″ · Doble cámara",
+    "description": "Explorá el iPhone 14 y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
+    "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14.jpg",
+    "images": [
+      "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14.jpg"
+    ],
+    "features": [
+      "Pantalla Super Retina XDR OLED de 6,1 pulgadas",
+      "Chip A15 Bionic",
+      "Doble cámara trasera de 12 MP",
+      "Photonic Engine para mejores fotos",
+      "Detección de choques",
+      "Conectividad 5G",
+      "Compatibilidad con MagSafe"
+    ],
+    "price": 0,
+    "currency": "ARS",
+    "showPrice": false,
+    "published": true,
+    "featured": false,
+    "sortOrder": 4,
+    "badge": ""
+  },
+  {
+    "id": "p_iphone_14_pro",
+    "category": "iphone",
+    "name": "iPhone 14 Pro",
+    "subtitle": "ProMotion 120 Hz · Dynamic Island",
+    "description": "Explorá el iPhone 14 Pro y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
+    "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14-pro.jpg",
+    "images": [
+      "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14-pro.jpg"
+    ],
+    "features": [
+      "Pantalla Super Retina XDR de 6,1 pulgadas con ProMotion",
+      "Chip A16 Bionic",
+      "Sistema de cámaras Pro con sensor principal de 48 MP",
+      "Dynamic Island",
+      "Always-On Display",
+      "Conectividad 5G",
+      "Compatibilidad con MagSafe"
+    ],
+    "price": 0,
+    "currency": "ARS",
+    "showPrice": false,
+    "published": true,
+    "featured": false,
+    "sortOrder": 5,
+    "badge": ""
+  },
+  {
+    "id": "p_iphone_14_pro_max",
+    "category": "iphone",
+    "name": "iPhone 14 Pro Max",
+    "subtitle": "Pantalla de 6,7″ · Dynamic Island",
+    "description": "Explorá el iPhone 14 Pro Max y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
+    "imageUrl": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-14-pro-max-1.jpg",
+    "images": [
+      "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-14-pro-max-1.jpg"
+    ],
+    "features": [
+      "Pantalla Super Retina XDR de 6,7 pulgadas con ProMotion",
+      "Chip A16 Bionic",
+      "Sistema de cámaras Pro con sensor principal de 48 MP",
+      "Dynamic Island",
+      "Always-On Display",
+      "Conectividad 5G",
+      "Compatibilidad con MagSafe"
+    ],
+    "price": 0,
+    "currency": "ARS",
+    "showPrice": false,
+    "published": true,
+    "featured": false,
+    "sortOrder": 6,
+    "badge": ""
+  },
+  {
+    "id": "p_iphone_15",
+    "category": "iphone",
+    "name": "iPhone 15",
+    "subtitle": "Dynamic Island · Puerto USB‑C",
+    "description": "Explorá el iPhone 15 y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
+    "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15.jpg",
+    "images": [
+      "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15.jpg"
+    ],
+    "features": [
+      "Pantalla Super Retina XDR OLED de 6,1 pulgadas",
+      "Chip A16 Bionic",
+      "Sistema de cámaras con principal de 48 MP",
+      "Dynamic Island",
+      "Puerto USB‑C",
+      "Conectividad 5G",
+      "Compatibilidad con MagSafe"
+    ],
+    "price": 0,
+    "currency": "ARS",
+    "showPrice": false,
+    "published": true,
+    "featured": false,
+    "sortOrder": 7,
+    "badge": ""
+  },
+  {
+    "id": "p_iphone_15_pro",
+    "category": "iphone",
+    "name": "iPhone 15 Pro",
+    "subtitle": "Titanio · Chip A17 Pro",
+    "description": "Explorá el iPhone 15 Pro y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
+    "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15-pro.jpg",
+    "images": [
+      "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15-pro.jpg"
+    ],
+    "features": [
+      "Pantalla Super Retina XDR de 6,1 pulgadas con ProMotion",
+      "Chip A17 Pro",
+      "Sistema de cámaras Pro con sensor principal de 48 MP",
+      "Chasis de titanio",
+      "Puerto USB‑C",
+      "Conectividad 5G",
+      "Compatibilidad con MagSafe"
+    ],
+    "price": 0,
+    "currency": "ARS",
+    "showPrice": false,
+    "published": true,
+    "featured": false,
+    "sortOrder": 8,
+    "badge": ""
+  },
+  {
+    "id": "p_iphone_15_pro_max",
+    "category": "iphone",
+    "name": "iPhone 15 Pro Max",
+    "subtitle": "Pantalla de 6,7″ · A17 Pro",
+    "description": "Explorá el iPhone 15 Pro Max y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
+    "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15-pro-max.jpg",
+    "images": [
+      "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15-pro-max.jpg"
+    ],
+    "features": [
+      "Pantalla Super Retina XDR de 6,7 pulgadas con ProMotion",
+      "Chip A17 Pro",
+      "Sistema de cámaras Pro de 48 MP",
+      "Zoom óptico de 5x",
+      "Chasis de titanio",
+      "Puerto USB‑C",
+      "Compatibilidad con MagSafe"
+    ],
+    "price": 0,
+    "currency": "ARS",
+    "showPrice": false,
+    "published": true,
+    "featured": false,
+    "sortOrder": 9,
+    "badge": ""
+  },
+  {
+    "id": "p_iphone_16",
+    "category": "iphone",
+    "name": "iPhone 16",
+    "subtitle": "Apple Intelligence · Chip A18",
+    "description": "Explorá el iPhone 16 y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
+    "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-16.jpg",
+    "images": [
+      "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-16.jpg"
+    ],
+    "features": [
+      "Pantalla Super Retina XDR OLED de 6,1 pulgadas",
+      "Chip A18",
+      "Sistema de cámaras avanzado",
+      "Botón de acción",
+      "Camera Control",
+      "Conectividad 5G",
+      "Puerto USB‑C"
+    ],
+    "price": 0,
+    "currency": "ARS",
+    "showPrice": false,
+    "published": true,
+    "featured": false,
+    "sortOrder": 10,
+    "badge": ""
+  },
+  {
+    "id": "p_iphone_16_pro",
+    "category": "iphone",
+    "name": "iPhone 16 Pro",
+    "subtitle": "Pantalla ProMotion · Chip A18 Pro",
+    "description": "Explorá el iPhone 16 Pro y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
+    "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-16-pro.jpg",
+    "images": [
+      "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-16-pro.jpg"
+    ],
+    "features": [
+      "Pantalla Super Retina XDR con ProMotion",
+      "Chip A18 Pro",
+      "Sistema de cámaras Pro de 48 MP",
+      "Chasis de titanio",
+      "Camera Control",
+      "Conectividad 5G",
+      "Puerto USB‑C"
+    ],
+    "price": 0,
+    "currency": "ARS",
+    "showPrice": false,
+    "published": true,
+    "featured": false,
+    "sortOrder": 11,
+    "badge": ""
+  },
+  {
+    "id": "p_iphone_16_pro_max",
+    "category": "iphone",
+    "name": "iPhone 16 Pro Max",
+    "subtitle": "Pantalla de 6,9″ · A18 Pro",
+    "description": "Explorá el iPhone 16 Pro Max y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
+    "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-16-pro-max.jpg",
+    "images": [
+      "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-16-pro-max.jpg"
+    ],
+    "features": [
+      "Pantalla Super Retina XDR de 6,9 pulgadas con ProMotion",
+      "Chip A18 Pro",
+      "Sistema de cámaras Pro de 48 MP",
+      "Zoom óptico de 5x",
+      "Chasis de titanio",
+      "Conectividad 5G",
+      "Puerto USB‑C"
+    ],
+    "price": 0,
+    "currency": "ARS",
+    "showPrice": false,
+    "published": true,
+    "featured": false,
+    "sortOrder": 12,
+    "badge": ""
+  },
+  {
+    "id": "p_iphone_17",
+    "category": "iphone",
+    "name": "iPhone 17",
+    "subtitle": "Pantalla ProMotion de 6,3″ · Chip A19",
+    "description": "Explorá el iPhone 17 y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
+    "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-17.jpg",
+    "images": [
+      "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-17.jpg"
+    ],
+    "features": [
+      "Pantalla Super Retina XDR OLED de 6,3 pulgadas",
+      "Tecnología ProMotion de hasta 120 Hz",
+      "Chip A19",
+      "Sistema de cámaras Dual Fusion de 48 MP",
+      "Cámara frontal Center Stage",
+      "Puerto USB-C",
+      "Conectividad 5G"
+    ],
+    "price": 0,
+    "currency": "ARS",
+    "showPrice": false,
+    "published": true,
+    "featured": false,
+    "sortOrder": 13,
+    "badge": ""
+  },
+  {
+    "id": "p_iphone_17_pro",
+    "category": "iphone",
+    "name": "iPhone 17 Pro",
+    "subtitle": "Pantalla ProMotion de 6,3″ · Chip A19 Pro",
+    "description": "Explorá el iPhone 17 Pro y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
+    "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-17-pro.jpg",
+    "images": [
+      "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-17-pro.jpg"
+    ],
+    "features": [
+      "Pantalla Super Retina XDR OLED de 6,3 pulgadas",
+      "ProMotion de hasta 120 Hz",
+      "Chip A19 Pro",
+      "Sistema Pro Fusion de cámaras de 48 MP",
+      "Diseño unibody de aluminio",
+      "Puerto USB-C",
+      "Conectividad 5G"
+    ],
+    "price": 0,
+    "currency": "ARS",
+    "showPrice": false,
+    "published": true,
+    "featured": false,
+    "sortOrder": 14,
+    "badge": ""
+  },
+  {
+    "id": "p_iphone_17_pro_max",
+    "category": "iphone",
+    "name": "iPhone 17 Pro Max",
+    "subtitle": "Pantalla ProMotion de 6,9″ · Chip A19 Pro",
+    "description": "Explorá el iPhone 17 Pro Max y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
+    "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-17-pro-max.jpg",
+    "images": [
+      "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-17-pro-max.jpg"
+    ],
+    "features": [
+      "Pantalla Super Retina XDR OLED de 6,9 pulgadas",
+      "ProMotion de hasta 120 Hz",
+      "Chip A19 Pro",
+      "Sistema Pro Fusion de cámaras de 48 MP",
+      "Diseño unibody de aluminio",
+      "Puerto USB-C",
+      "Conectividad 5G"
+    ],
+    "price": 0,
+    "currency": "ARS",
+    "showPrice": false,
+    "published": true,
+    "featured": false,
+    "sortOrder": 15,
+    "badge": ""
+  },
+  {
+    "id": "p_iphone_18_pro",
+    "category": "iphone",
+    "name": "iPhone 18 Pro",
+    "subtitle": "Pantalla ProMotion de 6,3″ · Chip A20 Pro",
+    "description": "Explorá el iPhone 18 Pro y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
+    "imageUrl": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone18-pro-1.jpg",
+    "images": [
+      "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone18-pro-1.jpg"
+    ],
+    "features": [
+      "Pantalla Super Retina XDR OLED de 6,3 pulgadas",
+      "ProMotion de hasta 120 Hz",
+      "Chip A20 Pro",
+      "Sistema Pro de cámaras con sensor principal de 48 MP",
+      "Puerto USB-C",
+      "Conectividad 5G",
+      "Face ID"
+    ],
+    "price": 0,
+    "currency": "ARS",
+    "showPrice": false,
+    "published": true,
+    "featured": false,
+    "sortOrder": 16,
+    "badge": ""
+  },
+  {
+    "id": "p_iphone_18_pro_max",
+    "category": "iphone",
+    "name": "iPhone 18 Pro Max",
+    "subtitle": "Pantalla ProMotion de 6,9″ · Chip A20 Pro",
+    "description": "Explorá el iPhone 18 Pro Max y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
+    "imageUrl": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone18-pro-max-1.jpg",
+    "images": [
+      "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone18-pro-max-1.jpg"
+    ],
+    "features": [
+      "Pantalla Super Retina XDR OLED de 6,9 pulgadas",
+      "ProMotion de hasta 120 Hz",
+      "Chip A20 Pro",
+      "Sistema Pro de cámaras con sensor principal de 48 MP",
+      "Puerto USB-C",
+      "Conectividad 5G",
+      "Face ID"
+    ],
+    "price": 0,
+    "currency": "ARS",
+    "showPrice": false,
+    "published": true,
+    "featured": false,
+    "sortOrder": 17,
+    "badge": ""
   }
 ]
