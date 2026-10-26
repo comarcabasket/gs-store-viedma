@@ -9,7 +9,7 @@ const catalogDetails={
  accesorios:{eyebrow:'/ 01 — ACCESORIOS',title:'Los detalles <span class="soft-text">hacen la diferencia.</span>',description:'Fundas, cargadores, auriculares y accesorios para acompañar tu iPhone.'}
 };
 function closeMobileNav(){
- $('#navLinks').classList.remove('open');$('#menuToggle').setAttribute('aria-expanded','false');
+ $('#navLinks').classList.remove('open');$('#menuToggle').setAttribute('aria-expanded','false');$('#menuToggle').setAttribute('aria-label','Abrir menú de navegación');$('#menuToggle').querySelector('.menu-label').textContent='Menú';
  closeCatalogDropdown();
 }
 function closeCatalogDropdown(){
@@ -116,10 +116,27 @@ function renderProductGallery(p){
  $$('[data-gallery-step]').forEach(b=>b.addEventListener('click',()=>{currentPhotoIndex=(currentPhotoIndex+Number(b.dataset.galleryStep)+images.length)%images.length;renderProductGallery(p);}));
 }
 function makeTradeMessage(){const model=$('#tradeModel').value;const storage=$('#tradeStorage').value;const battery=$('#tradeBattery').value;const condition=$('#tradeCondition').value;const details=$('#tradeDetails').value.trim();const wanted=$('#tradeWanted').value.trim();return `¡Hola, GS Store! 👋 Quiero cotizar mi iPhone para el *plan canje*.\n\n📱 *Modelo:* ${model}\n💾 *Almacenamiento:* ${storage}\n🔋 *Salud de batería:* ${battery}%\n✨ *Estado general:* ${condition}\n🔎 *Detalles:* ${details||'No informados'}${wanted?`\n🛍️ *Me interesa:* ${wanted}`:''}\n\n¿Podrían ayudarme con una cotización? ¡Gracias!`;}
-function fillModels(){const models=['iPhone 18 Pro Max','iPhone 18 Pro','iPhone 18','iPhone 17 Pro Max','iPhone 17 Pro','iPhone 17 Air','iPhone 17','iPhone 16 Pro Max','iPhone 16 Pro','iPhone 16 Plus','iPhone 16','iPhone 16e','iPhone 15 Pro Max','iPhone 15 Pro','iPhone 15 Plus','iPhone 15','iPhone 14 Pro Max','iPhone 14 Pro','iPhone 14 Plus','iPhone 14','iPhone 13 Pro Max','iPhone 13 Pro','iPhone 13 mini','iPhone 13','iPhone 12 Pro Max','iPhone 12 Pro','iPhone 12 mini','iPhone 12','iPhone 11 Pro Max','iPhone 11 Pro','iPhone 11','iPhone SE','iPhone XS Max','iPhone XS','iPhone XR','iPhone X'];$('#modelOptions').innerHTML=models.map(x=>`<option value="${escapeHTML(x)}"></option>`).join('');}
+const eligibleTradeModels = [
+ 'iPhone 18 Pro Max','iPhone 18 Pro','iPhone 18','iPhone 17 Pro Max','iPhone 17 Pro','iPhone 17 Air','iPhone 17',
+ 'iPhone 16 Pro Max','iPhone 16 Pro','iPhone 16 Plus','iPhone 16','iPhone 16e',
+ 'iPhone 15 Pro Max','iPhone 15 Pro','iPhone 15 Plus','iPhone 15',
+ 'iPhone 14 Pro Max','iPhone 14 Pro','iPhone 14 Plus','iPhone 14',
+ 'iPhone 13 Pro Max','iPhone 13 Pro','iPhone 13 mini','iPhone 13',
+ 'iPhone 12 Pro Max','iPhone 12 Pro','iPhone 12 mini','iPhone 12',
+ 'iPhone 11 Pro Max','iPhone 11 Pro','iPhone 11'
+];
+function fillModels(){
+ const model=$('#tradeModel');
+ model.insertAdjacentHTML('beforeend',eligibleTradeModels.map(name=>`<option value="${escapeHTML(name)}">${escapeHTML(name)}</option>`).join(''));
+}
+function validTradeModel(){
+ const model=$('#tradeModel');
+ model.setCustomValidity(model.value&&!eligibleTradeModels.includes(model.value)?'El Plan Canje acepta iPhone 11 o posteriores. Seleccioná un modelo de la lista.':'');
+ return model.checkValidity();
+}
 
 function setupEvents(){
- icons();fillModels();
+ icons();fillModels();$('#tradeModel').addEventListener('change',validTradeModel);
  $('#homeCategoryJump').addEventListener('click',()=>$('#homeCategories').scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'}));
  $$('.tab').forEach(b=>b.addEventListener('click',()=>{
    const category=b.dataset.category;
@@ -134,11 +151,22 @@ function setupEvents(){
  document.addEventListener('keydown',event=>{if(event.key==='Escape')closeCatalogDropdown();});
  window.addEventListener('hashchange',showRoute);
  $('#productSearch').addEventListener('input',e=>{searchQuery=e.target.value.toLowerCase().trim();renderProducts();});
- $('#menuToggle').addEventListener('click',()=>{let open=$('#navLinks').classList.toggle('open');$('#menuToggle').setAttribute('aria-expanded',String(open));});
+ $('#menuToggle').addEventListener('click',()=>{
+   const open=$('#navLinks').classList.toggle('open');
+   $('#menuToggle').setAttribute('aria-expanded',String(open));
+   $('#menuToggle').setAttribute('aria-label',open?'Cerrar menú de navegación':'Abrir menú de navegación');
+   $('#menuToggle').querySelector('.menu-label').textContent=open?'Cerrar':'Menú';
+   if(!open)closeCatalogDropdown();
+ });
+ document.addEventListener('click',event=>{
+   if($('#navLinks').classList.contains('open')&&!$('#header').contains(event.target))closeMobileNav();
+ });
+ document.addEventListener('keydown',event=>{if(event.key==='Escape'&&$('#navLinks').classList.contains('open'))closeMobileNav();});
+ window.addEventListener('resize',()=>{if(window.innerWidth>800&&$('#navLinks').classList.contains('open'))closeMobileNav();});
  $$('.nav-links a').forEach(a=>a.addEventListener('click',()=>closeMobileNav()));
  $('#detailMainImage').addEventListener('keydown',e=>{if(!['ArrowLeft','ArrowRight'].includes(e.key))return;const p=allProducts.find(p=>p.id===currentDetailId);const photos=p?getProductImages(p):[];if(photos.length<2)return;e.preventDefault();currentPhotoIndex=(currentPhotoIndex+(e.key==='ArrowRight'?1:-1)+photos.length)%photos.length;renderProductGallery(p);});
- $('#tradeForm').addEventListener('submit',e=>{e.preventDefault();if(!e.target.reportValidity())return;const url=linkWhatsApp(site.whatsappNumber,makeTradeMessage());if(!url){$('#tradeStatus').textContent='El número de WhatsApp todavía no está configurado. Podés copiar el mensaje y enviarlo por otro medio.';return;}$('#tradeStatus').textContent='Se abrió WhatsApp. Revisá el mensaje y presioná enviar.';window.open(url,'_blank','noopener,noreferrer');});
- $('#copyTrade').addEventListener('click',async()=>{if(!$('#tradeForm').reportValidity())return;try{await navigator.clipboard.writeText(makeTradeMessage());toast('Mensaje copiado.');}catch{toast('No se pudo copiar automáticamente.');}});
+ $('#tradeForm').addEventListener('submit',e=>{e.preventDefault();validTradeModel();if(!e.target.reportValidity())return;const url=linkWhatsApp(site.whatsappNumber,makeTradeMessage());if(!url){$('#tradeStatus').textContent='El número de WhatsApp todavía no está configurado. Podés copiar el mensaje y enviarlo por otro medio.';return;}$('#tradeStatus').textContent='Se abrió WhatsApp. Revisá el mensaje y presioná enviar.';window.open(url,'_blank','noopener,noreferrer');});
+ $('#copyTrade').addEventListener('click',async()=>{validTradeModel();if(!$('#tradeForm').reportValidity())return;try{await navigator.clipboard.writeText(makeTradeMessage());toast('Mensaje copiado.');}catch{toast('No se pudo copiar automáticamente.');}});
 }
 async function init(){setupEvents();const [siteResult,productResult]=await Promise.all([fetchJSON('/api/content?type=site',{}),fetchJSON('/api/content?type=products',[])]);site=siteResult&&typeof siteResult==='object'&&!Array.isArray(siteResult)?siteResult:{};allProducts=Array.isArray(productResult)?productResult:[];renderSite();renderProducts();showRoute();}
 init();

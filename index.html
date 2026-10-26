@@ -29,7 +29,7 @@
 </div></div>
 <a href="#canje" class="nav-page-link">Plan canje</a><a href="#contacto" class="nav-page-link">Contacto</a></nav>
 <a class="btn btn-primary nav-cta" id="navWhatsapp" href="#contacto">Hablemos <span class="btn-arrow" data-icon="northeast"></span></a>
-<button class="menu-toggle" id="menuToggle" aria-label="Abrir navegación" aria-expanded="false"><span data-icon="menu"></span></button>
+<button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navLinks"><span class="menu-glyph" aria-hidden="true"><i></i><i></i><i></i></span><span class="menu-label">Menú</span></button>
 </div></header>
 <main>
 <section class="hero page-view" id="inicio" data-page="inicio"><div class="hero-orb orb-a"></div><div class="hero-orb orb-b"></div><div class="container hero-grid">
@@ -109,8 +109,8 @@
       <div class="trade-intro-copy">
         <div class="trade-kicker"><span class="trade-kicker-dot"></span> GS STORE VIEDMA <span>/</span> PLAN CANJE</div>
         <h2>Lo que tenés hoy,<br/><em>te acerca a lo que viene.</em></h2>
-        <p>Tu iPhone puede ser parte de tu próximo equipo. Contanos qué modelo tenés y en qué estado está para solicitar una cotización personalizada.</p>
-        <div class="trade-intro-tags"><span><span data-icon="check"></span> Consulta sin compromiso</span><span><span data-icon="message"></span> Atención por WhatsApp</span></div>
+        <p>Tomamos iPhone 11 en adelante como parte de pago. Contanos qué modelo tenés y en qué estado se encuentra para solicitar una cotización personalizada.</p>
+        <div class="trade-intro-tags"><span><span data-icon="check"></span> Desde iPhone 11</span><span><span data-icon="check"></span> Consulta sin compromiso</span><span><span data-icon="message"></span> Atención por WhatsApp</span></div>
       </div>
       <div class="trade-visual" aria-hidden="true">
         <div class="trade-visual-glow"></div>
@@ -138,7 +138,7 @@
         <div class="form-heading"><h3>Hablemos de tu iPhone.</h3><p>Completá estos datos y prepararemos tu mensaje para WhatsApp.</p></div>
         <form id="tradeForm">
           <div class="trade-fields-heading"><span>01</span><strong>Datos de tu equipo</strong><i></i></div>
-          <div class="form-two"><div class="form-field"><label for="tradeModel">Modelo de iPhone <span>*</span></label><input id="tradeModel" type="text" list="modelOptions" maxlength="60" autocomplete="off" required placeholder="Ej. iPhone 15 Pro"/><datalist id="modelOptions"></datalist></div><div class="form-field"><label for="tradeStorage">Almacenamiento <span>*</span></label><select id="tradeStorage" required><option value="" selected disabled>Seleccioná la capacidad</option><option>64 GB</option><option>128 GB</option><option>256 GB</option><option>512 GB</option><option>1 TB</option><option>2 TB</option><option value="Otro">Otro</option></select></div></div>
+          <div class="form-two"><div class="form-field"><label for="tradeModel">Modelo de iPhone <span>*</span></label><select id="tradeModel" required aria-describedby="tradeEligibility"><option value="" selected disabled>Seleccioná tu iPhone</option></select><small id="tradeEligibility" class="trade-eligibility-note">Recibimos iPhone 11 o posteriores, sujetos a evaluación.</small></div><div class="form-field"><label for="tradeStorage">Almacenamiento <span>*</span></label><select id="tradeStorage" required><option value="" selected disabled>Seleccioná la capacidad</option><option>64 GB</option><option>128 GB</option><option>256 GB</option><option>512 GB</option><option>1 TB</option><option>2 TB</option><option value="Otro">Otro</option></select></div></div>
           <div class="form-field battery-field"><label for="tradeBattery">Salud de la batería <span>*</span></label><div class="battery-input"><span data-icon="battery"></span><input type="number" id="tradeBattery" min="1" max="100" inputmode="numeric" placeholder="Ej. 86" required/><span>%</span></div></div>
           <div class="trade-fields-heading trade-fields-second"><span>02</span><strong>Estado y preferencias</strong><i></i></div>
           <div class="form-field"><label for="tradeCondition">Estado general <span>*</span></label><select id="tradeCondition" required><option value="" selected disabled>Seleccioná el estado de tu equipo</option><option>Excelente — sin detalles</option><option>Bueno — marcas leves de uso</option><option>Regular — detalles estéticos visibles</option><option>Con fallas de funcionamiento</option></select></div>
