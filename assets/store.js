@@ -86,8 +86,13 @@ function renderProducts(){
  if(!items.length){const noProducts=published.length===0;$('#productGrid').innerHTML=`<div class="empty-state"><div class="empty-icon">${ico(noProducts?'bag':'search',23)}</div><h3>${noProducts?'Estamos preparando nuestro catálogo.':'No encontramos coincidencias.'}</h3><p>${noProducts?'Muy pronto vas a poder explorar nuestros productos. Mientras tanto, podés consultarnos directamente.':'Probá con otra palabra o seleccioná una categoría diferente.'}</p><a class="btn btn-primary" href="#contacto">${noProducts?'Hacer una consulta':'Contactanos'} ${ico('arrow',15)}</a></div>`;return;}
  $('#productGrid').innerHTML=items.map(p=>{
   const image=getProductImages(p)[0];const photos=getProductImages(p).length;
-  return `<a href="#producto/${encodeURIComponent(p.id)}" class="product-card" aria-label="Ver ${escapeHTML(p.name)}: fotos, características y consulta"><div class="product-image">${image?`<img loading="lazy" src="${escapeHTML(image)}" alt="${escapeHTML(p.name)}"/>`:`<div class="product-fallback">GS</div>`}${p.badge?`<span class="product-badge">${escapeHTML(p.badge)}</span>`:''}${photos>1?`<span class="photo-count">${ico('image',13)} ${photos} fotos</span>`:''}</div><div class="product-body"><div class="product-category">${escapeHTML(categories[p.category]||p.category)}</div><h3>${escapeHTML(p.name)}</h3><p>${escapeHTML(p.subtitle||'')}</p></div><div class="product-card-cta"><span>${escapeHTML(getCTA(p))}</span>${ico('arrow',18)}</div></a>`;
+  return `<a href="#producto/${encodeURIComponent(p.id)}" class="product-card" aria-label="Ver ${escapeHTML(p.name)}: fotos, características y consulta"><div class="product-image">${image?`<img loading="lazy" decoding="async" src="${escapeHTML(image)}" alt="${escapeHTML(p.name)}"/>`:`<div class="product-fallback">GS</div>`}${p.badge?`<span class="product-badge">${escapeHTML(p.badge)}</span>`:''}${photos>1?`<span class="photo-count">${ico('image',13)} ${photos} fotos</span>`:''}</div><div class="product-body"><div class="product-category">${escapeHTML(categories[p.category]||p.category)}</div><h3>${escapeHTML(p.name)}</h3><p>${escapeHTML(p.subtitle||'')}</p></div><div class="product-card-cta"><span>${escapeHTML(getCTA(p))}</span>${ico('arrow',18)}</div></a>`;
  }).join('');
+ // Si una foto externa deja de existir, mostrar un reemplazo visual limpio.
+ $$('#productGrid .product-image img').forEach(img=>img.addEventListener('error',()=>{
+   const placeholder=document.createElement('div');placeholder.className='product-fallback';placeholder.textContent='GS';
+   img.replaceWith(placeholder);
+ },{once:true}));
 }
 function renderProductDetail(id){
  const p=allProducts.find(p=>p.id===id&&p.published!==false);
@@ -110,8 +115,13 @@ function renderProductGallery(p){
  const images=getProductImages(p);
  if(currentPhotoIndex>=images.length)currentPhotoIndex=0;
  const image=images[currentPhotoIndex];
- $('#detailMainImage').innerHTML=image?`${images.length>1?`<button type="button" class="gallery-arrow previous" data-gallery-step="-1" aria-label="Foto anterior">${ico('arrow',22)}</button>`:''}<img src="${escapeHTML(image)}" alt="${escapeHTML(p.name)} — fotografía ${currentPhotoIndex+1} de ${images.length}"/>${images.length>1?`<button type="button" class="gallery-arrow next" data-gallery-step="1" aria-label="Foto siguiente">${ico('arrow',22)}</button>`:''}<span class="gallery-position">${currentPhotoIndex+1} / ${images.length}</span>`:'<div class="product-fallback">GS</div>';
- $('#detailThumbnails').innerHTML=images.length>1?images.map((src,i)=>`<button type="button" class="gallery-thumb ${i===currentPhotoIndex?'active':''}" data-gallery-index="${i}" aria-label="Mostrar foto ${i+1}" aria-pressed="${i===currentPhotoIndex}"><img src="${escapeHTML(src)}" alt="" loading="lazy"/></button>`).join(''):'';
+ $('#detailMainImage').innerHTML=image?`${images.length>1?`<button type="button" class="gallery-arrow previous" data-gallery-step="-1" aria-label="Foto anterior">${ico('arrow',22)}</button>`:''}<img src="${escapeHTML(image)}" decoding="async" alt="${escapeHTML(p.name)} — fotografía ${currentPhotoIndex+1} de ${images.length}"/>${images.length>1?`<button type="button" class="gallery-arrow next" data-gallery-step="1" aria-label="Foto siguiente">${ico('arrow',22)}</button>`:''}<span class="gallery-position">${currentPhotoIndex+1} / ${images.length}</span>`:'<div class="product-fallback">GS</div>';
+ const mainImage=$('#detailMainImage img');
+ if(mainImage)mainImage.addEventListener('error',()=>{
+   const fallback=document.createElement('div');fallback.className='product-fallback';fallback.textContent='Imagen no disponible';
+   $('#detailMainImage').replaceChildren(fallback);
+ },{once:true});
+ $('#detailThumbnails').innerHTML=images.length>1?images.map((src,i)=>`<button type="button" class="gallery-thumb ${i===currentPhotoIndex?'active':''}" data-gallery-index="${i}" aria-label="Mostrar foto ${i+1}" aria-pressed="${i===currentPhotoIndex}"><img src="${escapeHTML(src)}" alt="" loading="lazy" decoding="async"/></button>`).join(''):'';
  $$('[data-gallery-index]').forEach(b=>b.addEventListener('click',()=>{currentPhotoIndex=Number(b.dataset.galleryIndex);renderProductGallery(p);}));
  $$('[data-gallery-step]').forEach(b=>b.addEventListener('click',()=>{currentPhotoIndex=(currentPhotoIndex+Number(b.dataset.galleryStep)+images.length)%images.length;renderProductGallery(p);}));
 }

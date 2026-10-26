@@ -367,3 +367,11 @@
 @media(max-width:700px){.contact-hero-inner{display:block;padding:66px 0 75px}.contact-visual{display:none}.contact-hero-copy h1{font-size:clamp(34px,7vw,44px)}.contact-hero-copy>p{font-size:13px}.contact-content-area{padding:57px 0 70px}.contact-methods-heading{display:block;margin-bottom:24px}.contact-methods-heading>p{max-width:420px;margin:14px 0 0}.contact-methods-grid{grid-template-columns:1fr;gap:14px}.contact-channel{min-height:300px}.contact-explore-more{flex-wrap:wrap;gap:13px}.contact-explore-link{margin-left:64px}}
 @media(max-width:430px){.contact-hero-inner{padding:54px 0 66px}.contact-kicker{font-size:9px;margin-bottom:24px}.contact-hero-copy h1{font-size:clamp(31px,8.5vw,38px)}.contact-hero-copy>p{font-size:12px}.contact-city{font-size:9px;letter-spacing:.09em}.contact-content-area{padding:50px 0 65px}.contact-methods-heading h2{font-size:31px}.contact-channel{padding:21px;min-height:302px}.contact-channel-description{font-size:12px}.contact-channel-bottom{gap:9px}.contact-channel-cta{font-size:10px}.contact-explore-more{padding:19px 16px;gap:12px}.contact-explore-link{margin:0 0 0 57px;font-size:11px}}
 @media(prefers-reduced-motion:reduce){.contact-channel,.contact-channel:before,.contact-channel-arrow,.contact-channel-cta svg,.contact-explore-link svg{transition:none!important}}
+
+/* Accesibilidad: navegación de teclado sin alterar el diseño habitual. */
+.skip-link{position:fixed;top:10px;left:12px;z-index:1000;transform:translateY(-160%);background:#fff;color:#12315c;padding:12px 18px;border:2px solid #2b6cde;border-radius:9px;font:700 13px Manrope,sans-serif;box-shadow:0 9px 27px #001a4440}
+.skip-link:focus{transform:translateY(0)}
+#mainContent:focus{outline:none}
+@media(prefers-reduced-motion:reduce){.skip-link{transition:none}}
+/* Evitar que la ficha fuerce ancho extra en celulares de 320 px. */
+@media(max-width:850px){.product-detail-grid{grid-template-columns:minmax(0,1fr)}.detail-gallery,.detail-information,.detail-main-image,.detail-thumbnails{min-width:0;max-width:100%}}
