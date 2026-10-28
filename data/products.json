@@ -499,7 +499,7 @@
   {
     "id": "p_mvsfj93l_i4yvn",
     "name": "Samsung Galaxy A27 6/128GB",
-    "category": "iphone",
+    "category": "importados",
     "subtitle": "Pantalla Super AMOLED de 6,7″ · Cámara de 50 MP · Conectividad 5G",
     "description": "El Samsung Galaxy A27 5G combina un diseño moderno con una pantalla Super AMOLED de 6,7 pulgadas, resolución Full HD+ y una frecuencia de actualización de 120 Hz, ofreciendo una experiencia visual fluida y de alta calidad.\n\nIncorpora un procesador Snapdragon 6 Gen 3, 6GB de memoria RAM y 128GB de almacenamiento interno. Su cámara principal de 50 MP con estabilización óptica permite capturar fotografías y videos con mayor nitidez, mientras que su batería de 5.000 mAh ofrece autonomía para las actividades cotidianas.\nCaracterísticas\n- Pantalla: Super AMOLED de 6,7 pulgadas.\n- Resolución: Full HD+ (1080 × 2340 píxeles).\n- Frecuencia de actualización: 120 Hz.\n- Procesador: Qualcomm Snapdragon 6 Gen 3.\n- Memoria RAM: 6 GB.\n- Almacenamiento: 128 GB.\n- Memoria expandible: microSD de hasta 2 TB.\n- Cámara principal: 50 MP con estabilización óptica (OIS).\n- Cámaras adicionales: ultra gran angular de 5 MP y macro de 2 MP.\n- Cámara frontal: 12 MP.\n- Grabación de video: hasta 4K a 30 FPS.\n- Batería: 5.000 mAh.\n- Carga rápida: hasta 25 W.\n- Conectividad: 5G, Wi-Fi, Bluetooth 5.1 y NFC.\n- Puerto de carga: USB-C.\n- Sistema operativo: Android 16 con One UI 8.5.\n- Seguridad: lector de huellas digita",
     "imageUrl": "/media/producto-1793211333671-865c6aea36.webp",
@@ -514,5 +514,24 @@
     "published": true,
     "featured": false,
     "sortOrder": 19
+  },
+  {
+    "id": "p_mvsfkk13_2dpps",
+    "name": "Samsung Galaxy A37 5G 8GB / 256GB",
+    "category": "importados",
+    "subtitle": "",
+    "description": "El Samsung Galaxy A37 5G combina un diseño moderno con una pantalla Super AMOLED de 6,7 pulgadas, resolución Full HD+ y una frecuencia de actualización de 120 Hz, ofreciendo una experiencia visual fluida para navegar, jugar y disfrutar de contenido multimedia.\n\nCaracterísticas\n- Pantalla: Super AMOLED de 6,7 pulgadas.\n- Resolución: Full HD+ (1080 × 2340 píxeles).\n- Frecuencia de actualización: 120 Hz.\n- Procesador: Octa-Core de hasta 2,75 GHz.\n- Memoria RAM: 8 GB.\n- Almacenamiento: 256 GB.\n- Cámara principal: 50 MP con estabilización óptica (OIS).\n- Cámaras adicionales: ultra gran angular de 8 MP y macro de 5 MP.\n- Cámara frontal: 12 MP.\n- Grabación de video: hasta 4K a 30 FPS.\n- Batería: 5.000 mAh.\n- Carga rápida: hasta 45 W.\n- Conectividad: 5G, Wi-Fi, Bluetooth y NFC.\n- Puerto de carga: USB-C.\n- Sistema operativo: Android 16 con One UI 8.5.\n- Seguridad: lector de huellas digitales y Samsung Knox Vault.\n- Resistencia: certificación IP68 contra agua y polvo.\n- Diseño: 7,4 mm de grosor y 196 gramos de peso.",
+    "imageUrl": "/media/producto-1793211423082-59013cf0d3.webp",
+    "images": [
+      "/media/producto-1793211423082-59013cf0d3.webp"
+    ],
+    "features": [],
+    "badge": "",
+    "price": 0,
+    "currency": "ARS",
+    "showPrice": false,
+    "published": true,
+    "featured": false,
+    "sortOrder": 20
   }
 ]
