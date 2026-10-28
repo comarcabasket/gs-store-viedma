@@ -457,5 +457,24 @@
     "published": true,
     "featured": false,
     "sortOrder": 17
+  },
+  {
+    "id": "p_mvsf9gul_l27sk",
+    "name": "Sony PlayStation 5 Slim 1TB",
+    "category": "importados",
+    "subtitle": "Consola de nueva generación · SSD de 1TB · Gaming en 4K",
+    "description": "La Sony PlayStation 5 Slim ofrece una experiencia de juego de nueva generación, combinando potencia, velocidad y un diseño más compacto. Su almacenamiento SSD de 1TB permite reducir los tiempos de carga, mientras que sus tecnologías gráficas y el control DualSense brindan una experiencia de juego fluida e inmersiva.\nCaracterísticas\n- Almacenamiento: SSD de 1TB.\n- Procesador: AMD Ryzen Zen 2 de 8 núcleos.\n- Gráficos: GPU AMD Radeon RDNA 2.\n- Memoria RAM: 16 GB GDDR6.\n- Resolución: hasta 4K.\n- Rendimiento: hasta 120 FPS en juegos compatibles.\n- Tecnología gráfica: Ray Tracing y HDR.\n- Audio: tecnología de sonido 3D Tempest.\n- Control: DualSense inalámbrico con respuesta háptica y gatillos adaptativos.\n- Conectividad: Wi-Fi, Bluetooth y HDMI 2.1.\n- Compatibilidad: juegos de PS5 y una amplia selección de títulos de PS4.\n- Diseño: versión Slim, más compacta y ligera.\n- Lector de discos: según versión (con lectora o edición digital).",
+    "imageUrl": "/media/producto-1793211043724-6d1bad04b0.webp",
+    "images": [
+      "/media/producto-1793211043724-6d1bad04b0.webp"
+    ],
+    "features": [],
+    "badge": "",
+    "price": 0,
+    "currency": "ARS",
+    "showPrice": false,
+    "published": true,
+    "featured": false,
+    "sortOrder": 1
   }
 ]
