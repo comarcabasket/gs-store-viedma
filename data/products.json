@@ -894,5 +894,24 @@
     "published": true,
     "featured": false,
     "sortOrder": 39
+  },
+  {
+    "id": "p_mvsh8y31_b39tt",
+    "name": "Apple AirPods 4 con Cancelación Activa de Ruido",
+    "category": "iphone",
+    "subtitle": "Cancelación Activa de Ruido · Audio Espacial · Chip H2",
+    "description": "Los Apple AirPods 4 con Cancelación Activa de Ruido combinan un diseño moderno y cómodo con tecnología de audio avanzada. Incorporan el chip H2, Audio Espacial personalizado y un sistema de cancelación de ruido que permite disfrutar de música, llamadas y contenido multimedia con mayor inmersión.\n\nAdemás, cuentan con Audio Adaptativo, Modo Ambiente y Detección de Conversación. Su estuche de carga USB-C ofrece hasta 30 horas de reproducción con el control de ruido desactivado y es compatible con carga inalámbrica.\n\nCaracterísticas\n\n- Audio: sonido de alta calidad con chip Apple H2.\n- Cancelación de ruido: Cancelación Activa de Ruido (ANC).\n- Audio Espacial: personalizado con seguimiento dinámico de la cabeza.\n- Audio Adaptativo: ajusta automáticamente el nivel de control de ruido.\n- Modo Ambiente: permite escuchar los sonidos del entorno.\n- Detección de Conversación: reduce el volumen al comenzar a hablar.\n- Batería: hasta 4 horas con cancelación de ruido activada.\n- Autonomía total: hasta 20 horas con ANC o 30 horas sin control de ruido, utilizando el estuche.\n- Carga: USB-C, carga inalámbrica Qi y cargador de Apple Watch.\n- Controles: sensor de presión para música, llamadas y Siri.",
+    "imageUrl": "/media/producto-1793214245721-a623029522.webp",
+    "images": [
+      "/media/producto-1793214245721-a623029522.webp"
+    ],
+    "features": [],
+    "badge": "",
+    "price": 0,
+    "currency": "ARS",
+    "showPrice": false,
+    "published": true,
+    "featured": false,
+    "sortOrder": 40
   }
 ]
