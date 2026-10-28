@@ -913,5 +913,24 @@
     "published": true,
     "featured": false,
     "sortOrder": 40
+  },
+  {
+    "id": "p_mvshbrl9_tzhul",
+    "name": "Apple Pencil USB-C",
+    "category": "accesorios",
+    "subtitle": "Precisión y sensibilidad a la inclinación · Conexión USB-C · Diseño magnético",
+    "description": "El Apple Pencil USB-C es un accesorio diseñado para escribir, tomar apuntes, dibujar y realizar anotaciones en modelos de iPad compatibles.\n\nOfrece precisión, baja latencia y sensibilidad a la inclinación, permitiendo una escritura natural y un control cómodo. Su diseño permite adherirlo magnéticamente al lateral del iPad para guardarlo, mientras que la conexión USB-C facilita su enlace y carga.\n\nCaracterísticas\n\n- Conectividad: Bluetooth y puerto USB-C.\n- Precisión: escritura y dibujo con alta precisión.\n- Sensibilidad: detección de inclinación.\n- Latencia: respuesta rápida y fluida.\n- Carga: mediante cable USB-C.\n- Diseño: compacto, ligero y ergonómico.\n- Sujeción: adhesión magnética al lateral de modelos compatibles de iPad.\n- Compatibilidad: modelos seleccionados de iPad con USB-C.",
+    "imageUrl": "/media/producto-1793214342446-2355aed094.webp",
+    "images": [
+      "/media/producto-1793214342446-2355aed094.webp"
+    ],
+    "features": [],
+    "badge": "",
+    "price": 0,
+    "currency": "ARS",
+    "showPrice": false,
+    "published": true,
+    "featured": false,
+    "sortOrder": 41
   }
 ]
