@@ -932,5 +932,24 @@
     "published": true,
     "featured": false,
     "sortOrder": 41
+  },
+  {
+    "id": "p_mvshd2df_jcwva",
+    "name": "Apple Pencil Pro",
+    "category": "accesorios",
+    "subtitle": "Precisión avanzada · Sensibilidad a la presión · Carga magnética",
+    "description": "El Apple Pencil Pro ofrece una experiencia avanzada para escribir, dibujar, diseñar y tomar apuntes en modelos de iPad compatibles. Su tecnología de alta precisión, sensibilidad a la presión y detección de inclinación permite realizar trazos naturales y detallados.\n\nIncorpora funciones como el gesto de apretar, rotación del lápiz y respuesta háptica, que facilitan el uso de herramientas creativas. Cuenta con conexión y carga magnética, doble toque para cambiar de herramienta y compatibilidad con la aplicación Buscar de Apple.\n\nCaracterísticas\n\n- Precisión: trazos de alta precisión y baja latencia.\n- Sensibilidad: detección de presión e inclinación.\n- Gesto de apretar: acceso rápido a herramientas y colores.\n- Rotación: control preciso de pinceles mediante giroscopio.\n- Respuesta háptica: vibración al realizar determinadas acciones.\n- Doble toque: permite cambiar rápidamente de herramienta.\n- Puntero flotante: previsualización del trazo en iPad compatibles.\n- Carga: inalámbrica mediante acoplamiento magnético al iPad.\n- Función Buscar: permite localizar el Apple Pencil desde la aplicación de Apple.\n- Compatibilidad: iPad Pro M4/M5, iPad Air M2/M3/M4 e iPad mini A17 Pro.",
+    "imageUrl": "/media/producto-1793214491920-44cbb95692.webp",
+    "images": [
+      "/media/producto-1793214491920-44cbb95692.webp"
+    ],
+    "features": [],
+    "badge": "",
+    "price": 0,
+    "currency": "ARS",
+    "showPrice": false,
+    "published": true,
+    "featured": false,
+    "sortOrder": 42
   }
 ]
