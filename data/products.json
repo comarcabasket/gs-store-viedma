@@ -856,5 +856,24 @@
     "published": true,
     "featured": false,
     "sortOrder": 37
+  },
+  {
+    "id": "p_mvsh51br_k0znl",
+    "name": "Apple Watch Ultra 3 GPS + Cellular 49mm",
+    "category": "accesorios",
+    "subtitle": "Pantalla Retina OLED de 49 mm · Chip S10 · Hasta 42 horas de batería",
+    "description": "El Apple Watch Ultra 3 combina un diseño resistente de titanio con funciones avanzadas para deportes, aventura y uso cotidiano. Incorpora una pantalla Retina OLED siempre activa de 49 mm, chip S10 y GPS de doble frecuencia para un seguimiento preciso de la actividad física.\n\nCuenta con conectividad GPS + Cellular, sensores de salud, funciones de seguridad y una batería de hasta 42 horas de autonomía. Además, ofrece resistencia al agua de hasta 100 metros y carga rápida, ideal para acompañar entrenamientos y actividades al aire libre.\n\nCaracterísticas\n\n- Pantalla: Retina OLED LTPO3 siempre activa, de 49 mm.\n- Resolución: 422 × 514 píxeles.\n- Procesador: Apple S10 de doble núcleo.\n- Almacenamiento: 64 GB.\n- Brillo: hasta 3.000 nits.\n- Batería: hasta 42 horas de uso normal y 72 horas en modo de bajo consumo.\n- Carga rápida: hasta 80% en aproximadamente 45 minutos.\n- Conectividad: GPS de doble frecuencia, Cellular 5G, Wi-Fi y Bluetooth 5.3.\n- Salud: monitoreo cardíaco, seguimiento del sueño y sensores de temperatura.\n- Actividad física: seguimiento deportivo, brújula, altímetro y profundímetro.",
+    "imageUrl": "/media/producto-1793214074960-090069eb1e.webp",
+    "images": [
+      "/media/producto-1793214074960-090069eb1e.webp"
+    ],
+    "features": [],
+    "badge": "",
+    "price": 0,
+    "currency": "ARS",
+    "showPrice": false,
+    "published": true,
+    "featured": false,
+    "sortOrder": 38
   }
 ]
