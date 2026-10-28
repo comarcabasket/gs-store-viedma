@@ -761,5 +761,24 @@
     "published": true,
     "featured": false,
     "sortOrder": 32
+  },
+  {
+    "id": "p_mvsgtfv3_r6511",
+    "name": "Apple iPad A16 11″ 128GB",
+    "category": "accesorios",
+    "subtitle": "Pantalla Liquid Retina de 11″ · Chip A16 · Almacenamiento de 128GB",
+    "description": "El Apple iPad A16 combina un diseño moderno y ligero con una pantalla Liquid Retina de 11 pulgadas, ideal para estudiar, trabajar, navegar y disfrutar de contenido multimedia.\n\nEquipado con el chip A16 y 128GB de almacenamiento interno, ofrece un rendimiento fluido para aplicaciones, juegos y multitarea. Además, incorpora cámaras de 12 MP, compatibilidad con Apple Pencil y una batería de hasta 10 horas de autonomía.\n\nCaracterísticas\n\n- Pantalla: Liquid Retina de 11″, resolución de 2360 × 1640 píxeles.\n- Procesador: Apple A16 de 5 núcleos.\n- Almacenamiento: 128GB.\n- Cámara trasera: 12 MP con grabación de video hasta 4K.\n- Cámara frontal: 12 MP ultra gran angular con Encuadre Centrado.\n- Batería: hasta 10 horas de navegación por Wi-Fi o reproducción de video.\n- Conectividad: Wi-Fi 6 y Bluetooth 5.3.\n- Puerto de carga: USB-C.\n- Seguridad: Touch ID integrado en el botón superior.\n- Audio: altavoces estéreo en posición horizontal.\n- Compatibilidad: Apple Pencil USB-C y Apple Pencil de 1.ª generación.\n- Diseño: 7 mm de grosor y 477 gramos en la versión Wi-Fi.",
+    "imageUrl": "/media/producto-1793213544758-41b8b490d4.webp",
+    "images": [
+      "/media/producto-1793213544758-41b8b490d4.webp"
+    ],
+    "features": [],
+    "badge": "",
+    "price": 0,
+    "currency": "ARS",
+    "showPrice": false,
+    "published": true,
+    "featured": false,
+    "sortOrder": 33
   }
 ]
