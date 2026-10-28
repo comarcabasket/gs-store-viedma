@@ -644,7 +644,7 @@
     "price": 0,
     "currency": "ARS",
     "showPrice": false,
-    "published": false,
+    "published": true,
     "featured": false,
     "sortOrder": 26
   },
