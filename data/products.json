@@ -609,5 +609,24 @@
     "published": true,
     "featured": false,
     "sortOrder": 24
+  },
+  {
+    "id": "p_mvsg9gul_wv3ap",
+    "name": "Xiaomi Redmi 15C 8GB / 128GB",
+    "category": "importados",
+    "subtitle": "Pantalla de 6,9″ · Cámara de 50 MP · Batería de 6.000 mAh",
+    "description": "El Xiaomi Redmi 15C combina un diseño moderno con una pantalla de 6,9 pulgadas y una frecuencia de actualización de hasta 120 Hz, ofreciendo una experiencia visual fluida para redes sociales, aplicaciones y contenido multimedia.\n\nIncorpora el procesador MediaTek Helio G81-Ultra, cámara principal de 50 MP y una batería de 6.000 mAh con carga rápida de 33 W. Además, ofrece conectividad 4G, almacenamiento expandible y resistencia IP64 contra polvo y salpicaduras.\n\nCaracterísticas\n\n- Pantalla: LCD de 6,9″, resolución HD+ y hasta 120 Hz.\n- Procesador: MediaTek Helio G81-Ultra.\n- Memoria: 8GB RAM y 128GB de almacenamiento.\n- Memoria expandible: microSD de hasta 1TB.\n- Cámara principal: 50 MP.\n- Cámara frontal: 8 MP.\n- Grabación de video: hasta Full HD 1080p.\n- Batería: 6.000 mAh.\n- Carga rápida: 33 W por USB-C.\n- Conectividad: 4G LTE, Wi-Fi y Bluetooth.\n- Sistema operativo: Xiaomi HyperOS 2.\n- Resistencia: certificación IP64 contra polvo y salpicaduras.",
+    "imageUrl": "/media/producto-1793212594023-b1a62f1149.webp",
+    "images": [
+      "/media/producto-1793212594023-b1a62f1149.webp"
+    ],
+    "features": [],
+    "badge": "",
+    "price": 0,
+    "currency": "ARS",
+    "showPrice": false,
+    "published": true,
+    "featured": false,
+    "sortOrder": 25
   }
 ]
