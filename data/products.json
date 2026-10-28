@@ -704,5 +704,24 @@
     "published": true,
     "featured": false,
     "sortOrder": 29
+  },
+  {
+    "id": "p_mvsglmvn_t6989",
+    "name": "Motorola Edge 60 Pro 5G 8GB / 256GB",
+    "category": "importados",
+    "subtitle": "Pantalla pOLED de 6,7″ · Cámara Sony de 50 MP · Batería de 6.000 mAh",
+    "description": "El Motorola Edge 60 Pro 5G combina un diseño premium con una pantalla pOLED de 6,7 pulgadas, resolución Super HD+ y frecuencia de actualización de 120 Hz, ofreciendo una experiencia visual fluida y de alta calidad.\n\nEquipado con el procesador MediaTek Dimensity 8350 Extreme, 8GB de memoria RAM y 256GB de almacenamiento, brinda un rendimiento avanzado para aplicaciones, juegos y multitarea. Además, incorpora un sistema de triple cámara con sensor principal Sony de 50 MP, una batería de 6.000 mAh y carga rápida TurboPower de 90 W.\n\nCaracterísticas\n\n- Pantalla: pOLED de 6,7″, resolución Super HD+ y 120 Hz.\n- Procesador: MediaTek Dimensity 8350 Extreme.\n- Memoria: 8GB RAM y 256GB de almacenamiento.\n- Cámara principal: Sony LYTIA de 50 MP con estabilización óptica (OIS).\n- Cámaras adicionales: ultra gran angular de 50 MP y teleobjetivo de 10 MP.\n- Cámara frontal: 50 MP.\n- Grabación de video: hasta 4K a 30 FPS.\n- Batería: 6.000 mAh con carga rápida TurboPower de 90 W.\n- Carga inalámbrica: hasta 15 W.\n- Conectividad: 5G, Wi-Fi 6E, Bluetooth 5.4 y NFC.\n- Seguridad: lector de huellas en pantalla y desbloqueo facial.\n- Resistencia: certificaciones IP68/IP69 contra agua y polvo.",
+    "imageUrl": "/media/producto-1793213124482-051a910ffb.webp",
+    "images": [
+      "/media/producto-1793213124482-051a910ffb.webp"
+    ],
+    "features": [],
+    "badge": "",
+    "price": 0,
+    "currency": "ARS",
+    "showPrice": false,
+    "published": true,
+    "featured": false,
+    "sortOrder": 30
   }
 ]
