@@ -783,10 +783,10 @@
   },
   {
     "id": "p_mvsgxdzj_bcxl3",
-    "name": "Apple MacBook Neo 13″ A18 Pro 8GB / 256GB",
+    "name": "Apple MacBook Neo 13″ A18 Pro 8GB / 256GB & 512GB",
     "category": "accesorios",
     "subtitle": "Pantalla Liquid Retina de 13″ · Chip A18 Pro · Hasta 16 horas de batería",
-    "description": "La Apple MacBook Neo combina un diseño elegante, compacto y liviano con el rendimiento del chip A18 Pro. Incorpora una pantalla Liquid Retina de 13 pulgadas, ideal para estudiar, trabajar, navegar y disfrutar de contenido multimedia.\n\nEquipada con 8GB de memoria unificada y 256GB de almacenamiento SSD, ofrece un funcionamiento fluido para las tareas cotidianas. Además, cuenta con cámara FaceTime HD de 1080p, sonido compatible con Audio Espacial y una batería de hasta 16 horas de autonomía.\n\nCaracterísticas\n\n- Pantalla: Liquid Retina de 13″, resolución de 2408 × 1506 píxeles.\n- Procesador: Apple A18 Pro de 6 núcleos.\n- Gráficos: GPU de 5 núcleos.\n- Memoria RAM: 8GB de memoria unificada.\n- Almacenamiento: SSD de 256GB.\n- Cámara: FaceTime HD de 1080p.\n- Batería: hasta 16 horas de reproducción de video.\n- Conectividad: Wi-Fi 6E y Bluetooth 6.\n- Puertos: 2 USB-C y entrada de 3,5 mm para auriculares.\n- Audio: dos altavoces compatibles con Audio Espacial y Dolby Atmos.\n- Sistema operativo: macOS.\n- Diseño: estructura de aluminio, 1,23 kg de peso y 1,27 cm de grosor.",
+    "description": "La Apple MacBook Neo combina un diseño elegante, compacto y liviano con el rendimiento del chip A18 Pro. Incorpora una pantalla Liquid Retina de 13 pulgadas, ideal para estudiar, trabajar, navegar y disfrutar de contenido multimedia.\n\nEquipada con 8GB de memoria unificada y 256GB (o 512GB) de almacenamiento SSD, ofrece un funcionamiento fluido para las tareas cotidianas. Además, cuenta con cámara FaceTime HD de 1080p, sonido compatible con Audio Espacial y una batería de hasta 16 horas de autonomía.\n\nCaracterísticas\n\n- Pantalla: Liquid Retina de 13″, resolución de 2408 × 1506 píxeles.\n- Procesador: Apple A18 Pro de 6 núcleos.\n- Gráficos: GPU de 5 núcleos.\n- Memoria RAM: 8GB de memoria unificada.\n- Almacenamiento: SSD de 256GB.\n- Cámara: FaceTime HD de 1080p.\n- Batería: hasta 16 horas de reproducción de video.\n- Conectividad: Wi-Fi 6E y Bluetooth 6.\n- Puertos: 2 USB-C y entrada de 3,5 mm para auriculares.\n- Audio: dos altavoces compatibles con Audio Espacial y Dolby Atmos.\n- Sistema operativo: macOS.\n- Diseño: estructura de aluminio, 1,23 kg de peso y 1,27 cm de grosor.",
     "imageUrl": "/media/producto-1793213670964-ce1cdfc40a.webp",
     "images": [
       "/media/producto-1793213670964-ce1cdfc40a.webp"
@@ -799,5 +799,22 @@
     "published": true,
     "featured": false,
     "sortOrder": 34
+  },
+  {
+    "id": "p_mvsgynqh_6zpyl",
+    "name": "Nuevo producto",
+    "category": "iphone",
+    "subtitle": "",
+    "description": "",
+    "imageUrl": "",
+    "images": [],
+    "features": [],
+    "badge": "",
+    "price": 0,
+    "currency": "ARS",
+    "showPrice": false,
+    "published": false,
+    "featured": false,
+    "sortOrder": 35
   }
 ]
