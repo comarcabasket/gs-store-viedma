@@ -875,5 +875,24 @@
     "published": true,
     "featured": false,
     "sortOrder": 38
+  },
+  {
+    "id": "p_mvsh7qkr_df4m7",
+    "name": "Apple AirPods Pro 3",
+    "category": "accesorios",
+    "subtitle": "Cancelación Activa de Ruido · Audio Espacial · Hasta 8 horas de batería",
+    "description": "Los Apple AirPods Pro 3 combinan un diseño cómodo y compacto con tecnología de audio avanzada. Incorporan el chip H2, Cancelación Activa de Ruido y Audio Espacial personalizado, ofreciendo una experiencia de sonido envolvente para música, llamadas y contenido multimedia.\n\nAdemás, cuentan con detección de frecuencia cardíaca durante entrenamientos, resistencia al agua y al sudor IP57 y hasta 8 horas de reproducción con una sola carga. Su estuche MagSafe con USB-C permite extender la autonomía y facilita la carga inalámbrica.\n\nCaracterísticas\n\n- Audio: sonido de alta fidelidad con chip Apple H2.\n- Cancelación de ruido: Cancelación Activa de Ruido y Audio Adaptativo.\n- Audio Espacial: personalizado con seguimiento dinámico de la cabeza.\n- Modo Ambiente: permite escuchar los sonidos del entorno.\n- Sensores: detección de frecuencia cardíaca durante entrenamientos.\n- Batería: hasta 8 horas de reproducción con cancelación de ruido.\n- Autonomía total: hasta 24 horas con el estuche de carga.\n- Carga: USB-C, MagSafe y carga inalámbrica Qi.\n- Controles: superficie táctil para música, llamadas y volumen.\n- Resistencia: certificación IP57 contra polvo, agua y sudor.",
+    "imageUrl": "/media/producto-1793214155738-1eeee5ec99.webp",
+    "images": [
+      "/media/producto-1793214155738-1eeee5ec99.webp"
+    ],
+    "features": [],
+    "badge": "",
+    "price": 0,
+    "currency": "ARS",
+    "showPrice": false,
+    "published": true,
+    "featured": false,
+    "sortOrder": 39
   }
 ]
