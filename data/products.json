@@ -685,5 +685,24 @@
     "published": true,
     "featured": false,
     "sortOrder": 28
+  },
+  {
+    "id": "p_mvsgjk51_h459j",
+    "name": "Xiaomi Redmi Pad 2 4GB / 256GB",
+    "category": "importados",
+    "subtitle": "Pantalla 2.5K de 11″ · Procesador Helio G100-Ultra · Batería de 9.000 mAh",
+    "description": "La Xiaomi Redmi Pad 2 combina un diseño moderno y ligero con una pantalla de 11 pulgadas, resolución 2.5K y frecuencia de actualización de 90 Hz, ideal para estudiar, trabajar, navegar y disfrutar de contenido multimedia.\n\nEquipada con el procesador MediaTek Helio G100-Ultra, ofrece un rendimiento fluido para las actividades cotidianas. Además, incorpora cuatro altavoces con Dolby Atmos, una batería de 9.000 mAh con carga rápida de 18 W y almacenamiento expandible mediante microSD.\n\nCaracterísticas\n\n- Pantalla: LCD de 11″, resolución 2.5K y 90 Hz.\n- Procesador: MediaTek Helio G100-Ultra.\n- Memoria RAM: 4 GB (versión a confirmar).\n- Almacenamiento: 256 GB (versión a confirmar).\n- Memoria expandible: microSD de hasta 2 TB.\n- Cámara trasera: 8 MP.\n- Cámara frontal: 5 MP.\n- Batería: 9.000 mAh.\n- Carga rápida: hasta 18 W por USB-C.\n- Audio: cuatro altavoces compatibles con Dolby Atmos.\n- Conectividad: Wi-Fi 5 y Bluetooth 5.3.\n- Sistema operativo: Xiaomi HyperOS 2.",
+    "imageUrl": "/media/producto-1793213025439-2d3af2b5a2.webp",
+    "images": [
+      "/media/producto-1793213025439-2d3af2b5a2.webp"
+    ],
+    "features": [],
+    "badge": "",
+    "price": 0,
+    "currency": "ARS",
+    "showPrice": false,
+    "published": true,
+    "featured": false,
+    "sortOrder": 29
   }
 ]
