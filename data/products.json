@@ -837,5 +837,24 @@
     "published": true,
     "featured": false,
     "sortOrder": 36
+  },
+  {
+    "id": "p_mvsh3x6v_nwcxp",
+    "name": "Apple Watch Series 11 46mm GPS",
+    "category": "accesorios",
+    "subtitle": "Pantalla Retina OLED de 46 mm · Chip S10 · Hasta 24 horas de batería",
+    "description": "El Apple Watch Series 11 de 46 mm combina un diseño elegante y liviano con una pantalla Retina OLED siempre activa de mayor tamaño, ideal para visualizar notificaciones, registrar entrenamientos y utilizar aplicaciones con comodidad.\n\nEquipado con el chip S10 y sensores avanzados, permite monitorear la frecuencia cardíaca, analizar el sueño y realizar un seguimiento de la actividad física. Además, ofrece hasta 24 horas de autonomía, carga rápida y resistencia al agua.\n\nCaracterísticas\n\n- Pantalla: Retina OLED LTPO3 siempre activa, de 46 mm.\n- Resolución: 416 × 496 píxeles.\n- Procesador: Apple S10 de doble núcleo.\n- Almacenamiento: 64 GB.\n- Brillo: hasta 2.000 nits.\n- Batería: hasta 24 horas de uso normal.\n- Carga rápida: hasta 80% en aproximadamente 30 minutos.\n- Conectividad: GPS, Wi-Fi y Bluetooth 5.3.\n- Salud: monitoreo cardíaco, seguimiento del sueño y sensor de temperatura.\n- Actividad física: seguimiento de entrenamientos y deportes.\n- Resistencia: al agua hasta 50 metros y protección contra polvo IP6X.\n- Compatibilidad: iPhone 11 o posterior con iOS 26 o superior.",
+    "imageUrl": "/media/producto-1793213976600-3a87be9fd4.webp",
+    "images": [
+      "/media/producto-1793213976600-3a87be9fd4.webp"
+    ],
+    "features": [],
+    "badge": "",
+    "price": 0,
+    "currency": "ARS",
+    "showPrice": false,
+    "published": true,
+    "featured": false,
+    "sortOrder": 37
   }
 ]
