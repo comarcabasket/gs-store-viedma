@@ -723,5 +723,24 @@
     "published": true,
     "featured": false,
     "sortOrder": 30
+  },
+  {
+    "id": "p_mvsgnwxr_iig1r",
+    "name": "Motorola Edge 70 5G 8GB / 256GB",
+    "category": "importados",
+    "subtitle": "Pantalla pOLED de 6,67″ · Cámara de 50 MP · Diseño ultradelgado",
+    "description": "El Motorola Edge 70 5G combina un diseño ultradelgado de apenas 5,99 mm con una pantalla pOLED de 6,67 pulgadas, resolución Super HD y frecuencia de actualización de 120 Hz, ofreciendo una experiencia visual fluida y de alta calidad.\n\nEquipado con el procesador Snapdragon 7 Gen 4, 8GB de memoria RAM y 256GB de almacenamiento interno, brinda un rendimiento avanzado para aplicaciones, juegos y multitarea. Además, incorpora un sistema de cámaras de 50 MP, funciones de inteligencia artificial moto ai y una batería de silicio-carbono con carga rápida TurboPower de 68 W.\n\nCaracterísticas\n\n- Pantalla: pOLED de 6,67″, resolución Super HD y 120 Hz.\n- Procesador: Qualcomm Snapdragon 7 Gen 4.\n- Memoria: 8GB RAM y 256GB de almacenamiento.\n- Cámara principal: 50 MP con estabilización óptica (OIS).\n- Cámara adicional: ultra gran angular y macro de 50 MP.\n- Cámara frontal: 50 MP.\n- Grabación de video: hasta 4K.\n- Batería: 4.800 mAh con carga rápida de 68 W.\n- Carga inalámbrica: hasta 15 W.\n- Conectividad: 5G, Wi-Fi 6E, Bluetooth y NFC.\n- Sistema operativo: Android 16 con funciones moto ai.\n- Diseño y resistencia: 5,99 mm de grosor, Gorilla Glass 7i y certificaciones IP68/IP69.",
+    "imageUrl": "/media/producto-1793213290980-9c923eaef2.webp",
+    "images": [
+      "/media/producto-1793213290980-9c923eaef2.webp"
+    ],
+    "features": [],
+    "badge": "",
+    "price": 0,
+    "currency": "ARS",
+    "showPrice": false,
+    "published": true,
+    "featured": false,
+    "sortOrder": 31
   }
 ]
