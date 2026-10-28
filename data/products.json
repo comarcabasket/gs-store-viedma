@@ -802,18 +802,20 @@
   },
   {
     "id": "p_mvsgynqh_6zpyl",
-    "name": "Nuevo producto",
-    "category": "iphone",
-    "subtitle": "",
-    "description": "",
-    "imageUrl": "",
-    "images": [],
+    "name": "Apple MacBook Air M5 13″ 16GB / 512GB",
+    "category": "accesorios",
+    "subtitle": "Pantalla Liquid Retina de 13,6″ · Chip Apple M5 · Hasta 18 horas de batería",
+    "description": "La Apple MacBook Air M5 combina un diseño ultradelgado y liviano con el rendimiento del chip Apple M5, ofreciendo una experiencia fluida para estudiar, trabajar, editar contenido y realizar múltiples tareas.\n\nCuenta con una pantalla Liquid Retina de 13,6 pulgadas, 16GB de memoria unificada y 512GB de almacenamiento SSD. Además, incorpora una cámara de 12 MP con Encuadre Centrado, conectividad Wi-Fi 7 y una batería de hasta 18 horas de autonomía.\n\nCaracterísticas\n\n- Pantalla: Liquid Retina de 13,6″, resolución de 2560 × 1664 píxeles.\n- Procesador: Apple M5 con CPU de 10 núcleos.\n- Gráficos: GPU de 8 núcleos, según configuración.\n- Memoria RAM: 16GB de memoria unificada.\n- Almacenamiento: SSD de 512GB.\n- Cámara: 12 MP con Encuadre Centrado y grabación Full HD.\n- Batería: hasta 18 horas de reproducción de video.\n- Conectividad: Wi-Fi 7 y Bluetooth 6.\n- Puertos: 2 Thunderbolt 4 (USB-C), MagSafe 3 y conexión de 3,5 mm.\n- Audio: cuatro altavoces compatibles con Audio Espacial y Dolby Atmos.\n- Seguridad: Touch ID integrado en el teclado.\n- Diseño: estructura de aluminio, 1,13 cm de grosor y 1,23 kg de peso.",
+    "imageUrl": "/media/producto-1793213804265-4a9ce3dfeb.webp",
+    "images": [
+      "/media/producto-1793213804265-4a9ce3dfeb.webp"
+    ],
     "features": [],
     "badge": "",
     "price": 0,
     "currency": "ARS",
     "showPrice": false,
-    "published": false,
+    "published": true,
     "featured": false,
     "sortOrder": 35
   }
