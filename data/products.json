@@ -590,5 +590,24 @@
     "published": true,
     "featured": false,
     "sortOrder": 23
+  },
+  {
+    "id": "p_mvsfxknl_bgqk4",
+    "name": "Samsung Galaxy S26 Ultra 5G 12GB / 256GB",
+    "category": "importados",
+    "subtitle": "Pantalla Dynamic AMOLED 2X de 6,9″ · Cámara de 200 MP · Galaxy AI",
+    "description": "El Samsung Galaxy S26 Ultra 5G combina tecnología de última generación con un diseño premium y un rendimiento de alta gama. Incorpora el procesador Snapdragon 8 Elite Gen 5 for Galaxy, 12GB de memoria RAM y 256GB de almacenamiento interno.\n\nCuenta con una pantalla Dynamic AMOLED 2X de 6,9 pulgadas, resolución Quad HD+ y frecuencia de actualización de 120 Hz. Su sistema de cuatro cámaras, encabezado por un sensor de 200 MP, permite capturar fotografías y videos de alta calidad. Además, integra funciones Galaxy AI, S Pen y una batería de 5.000 mAh.\n\nCaracterísticas\n\n- Pantalla: Dynamic AMOLED 2X de 6,9″, Quad HD+ y 120 Hz\n- Procesador: Snapdragon 8 Elite Gen 5 for Galaxy\n- Memoria: 12GB RAM y 256GB de almacenamiento\n- Cámara principal: 200 MP con estabilización óptica\n- Cámaras adicionales: ultra gran angular de 50 MP y teleobjetivos de 50 MP y 10 MP\n- Cámara frontal: 12 MP\n- Grabación de video: hasta 8K a 30 FPS\n- Batería: 5.000 mAh con carga rápida de hasta 60 W\n- Conectividad: 5G, Wi-Fi 7, Bluetooth 6.0 y NFC\n- Inteligencia artificial: funciones Galaxy AI\n- Funciones adicionales: S Pen integrado y pantalla de privacidad\n- Resistencia: certificación IP68 contra agua y polvo",
+    "imageUrl": "/media/producto-1793212000950-00230b96ab.webp",
+    "images": [
+      "/media/producto-1793212000950-00230b96ab.webp"
+    ],
+    "features": [],
+    "badge": "",
+    "price": 0,
+    "currency": "ARS",
+    "showPrice": false,
+    "published": true,
+    "featured": false,
+    "sortOrder": 24
   }
 ]
