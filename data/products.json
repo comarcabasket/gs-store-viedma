@@ -1,13 +1,13 @@
 [
   {
     "id": "p_iphone_13",
-    "category": "iphone",
     "name": "iPhone 13",
+    "category": "iphone",
     "subtitle": "Super Retina XDR de 6,1″ · Chip A15 Bionic",
     "description": "Explorá el iPhone 13 y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
-    "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13.jpg",
+    "imageUrl": "/media/producto-1793209771092-b3a0c7f0ed.webp",
     "images": [
-      "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13.jpg"
+      "/media/producto-1793209771092-b3a0c7f0ed.webp"
     ],
     "features": [
       "Pantalla Super Retina XDR OLED de 6,1 pulgadas",
@@ -18,18 +18,18 @@
       "Face ID",
       "Compatibilidad con MagSafe"
     ],
+    "badge": "",
     "price": 0,
     "currency": "ARS",
     "showPrice": false,
     "published": true,
     "featured": false,
-    "sortOrder": 1,
-    "badge": ""
+    "sortOrder": 1
   },
   {
     "id": "p_iphone_13_pro",
-    "category": "iphone",
     "name": "iPhone 13 Pro",
+    "category": "iphone",
     "subtitle": "ProMotion 120 Hz · Chip A15 Bionic",
     "description": "Explorá el iPhone 13 Pro y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
     "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-pro.jpg",
@@ -45,18 +45,18 @@
       "Conectividad 5G",
       "Compatibilidad con MagSafe"
     ],
+    "badge": "",
     "price": 0,
     "currency": "ARS",
     "showPrice": false,
     "published": true,
     "featured": false,
-    "sortOrder": 2,
-    "badge": ""
+    "sortOrder": 2
   },
   {
     "id": "p_mvoays0h_ibhd9",
-    "category": "iphone",
     "name": "iPhone 13 Pro Max",
+    "category": "iphone",
     "subtitle": "Pantalla de 6,7″ · ProMotion 120 Hz",
     "description": "Explorá el iPhone 13 Pro Max y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
     "imageUrl": "/media/producto-1792962011449-e3c623e8f8.webp",
@@ -73,18 +73,18 @@
       "Conectividad 5G",
       "Compatibilidad con MagSafe"
     ],
+    "badge": "",
     "price": 0,
     "currency": "ARS",
     "showPrice": false,
     "published": true,
     "featured": false,
-    "sortOrder": 3,
-    "badge": ""
+    "sortOrder": 3
   },
   {
     "id": "p_iphone_14",
-    "category": "iphone",
     "name": "iPhone 14",
+    "category": "iphone",
     "subtitle": "Super Retina XDR de 6,1″ · Doble cámara",
     "description": "Explorá el iPhone 14 y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
     "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14.jpg",
@@ -100,18 +100,18 @@
       "Conectividad 5G",
       "Compatibilidad con MagSafe"
     ],
+    "badge": "",
     "price": 0,
     "currency": "ARS",
     "showPrice": false,
     "published": true,
     "featured": false,
-    "sortOrder": 4,
-    "badge": ""
+    "sortOrder": 4
   },
   {
     "id": "p_iphone_14_pro",
-    "category": "iphone",
     "name": "iPhone 14 Pro",
+    "category": "iphone",
     "subtitle": "ProMotion 120 Hz · Dynamic Island",
     "description": "Explorá el iPhone 14 Pro y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
     "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14-pro.jpg",
@@ -127,18 +127,18 @@
       "Conectividad 5G",
       "Compatibilidad con MagSafe"
     ],
+    "badge": "",
     "price": 0,
     "currency": "ARS",
     "showPrice": false,
     "published": true,
     "featured": false,
-    "sortOrder": 5,
-    "badge": ""
+    "sortOrder": 5
   },
   {
     "id": "p_iphone_14_pro_max",
-    "category": "iphone",
     "name": "iPhone 14 Pro Max",
+    "category": "iphone",
     "subtitle": "Pantalla de 6,7″ · Dynamic Island",
     "description": "Explorá el iPhone 14 Pro Max y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
     "imageUrl": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-14-pro-max-1.jpg",
@@ -154,18 +154,18 @@
       "Conectividad 5G",
       "Compatibilidad con MagSafe"
     ],
+    "badge": "",
     "price": 0,
     "currency": "ARS",
     "showPrice": false,
     "published": true,
     "featured": false,
-    "sortOrder": 6,
-    "badge": ""
+    "sortOrder": 6
   },
   {
     "id": "p_iphone_15",
-    "category": "iphone",
     "name": "iPhone 15",
+    "category": "iphone",
     "subtitle": "Dynamic Island · Puerto USB‑C",
     "description": "Explorá el iPhone 15 y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
     "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15.jpg",
@@ -181,18 +181,18 @@
       "Conectividad 5G",
       "Compatibilidad con MagSafe"
     ],
+    "badge": "",
     "price": 0,
     "currency": "ARS",
     "showPrice": false,
     "published": true,
     "featured": false,
-    "sortOrder": 7,
-    "badge": ""
+    "sortOrder": 7
   },
   {
     "id": "p_iphone_15_pro",
-    "category": "iphone",
     "name": "iPhone 15 Pro",
+    "category": "iphone",
     "subtitle": "Titanio · Chip A17 Pro",
     "description": "Explorá el iPhone 15 Pro y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
     "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15-pro.jpg",
@@ -208,18 +208,18 @@
       "Conectividad 5G",
       "Compatibilidad con MagSafe"
     ],
+    "badge": "",
     "price": 0,
     "currency": "ARS",
     "showPrice": false,
     "published": true,
     "featured": false,
-    "sortOrder": 8,
-    "badge": ""
+    "sortOrder": 8
   },
   {
     "id": "p_iphone_15_pro_max",
-    "category": "iphone",
     "name": "iPhone 15 Pro Max",
+    "category": "iphone",
     "subtitle": "Pantalla de 6,7″ · A17 Pro",
     "description": "Explorá el iPhone 15 Pro Max y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
     "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15-pro-max.jpg",
@@ -235,18 +235,18 @@
       "Puerto USB‑C",
       "Compatibilidad con MagSafe"
     ],
+    "badge": "",
     "price": 0,
     "currency": "ARS",
     "showPrice": false,
     "published": true,
     "featured": false,
-    "sortOrder": 9,
-    "badge": ""
+    "sortOrder": 9
   },
   {
     "id": "p_iphone_16",
-    "category": "iphone",
     "name": "iPhone 16",
+    "category": "iphone",
     "subtitle": "Apple Intelligence · Chip A18",
     "description": "Explorá el iPhone 16 y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
     "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-16.jpg",
@@ -262,18 +262,18 @@
       "Conectividad 5G",
       "Puerto USB‑C"
     ],
+    "badge": "",
     "price": 0,
     "currency": "ARS",
     "showPrice": false,
     "published": true,
     "featured": false,
-    "sortOrder": 10,
-    "badge": ""
+    "sortOrder": 10
   },
   {
     "id": "p_iphone_16_pro",
-    "category": "iphone",
     "name": "iPhone 16 Pro",
+    "category": "iphone",
     "subtitle": "Pantalla ProMotion · Chip A18 Pro",
     "description": "Explorá el iPhone 16 Pro y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
     "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-16-pro.jpg",
@@ -289,18 +289,18 @@
       "Conectividad 5G",
       "Puerto USB‑C"
     ],
+    "badge": "",
     "price": 0,
     "currency": "ARS",
     "showPrice": false,
     "published": true,
     "featured": false,
-    "sortOrder": 11,
-    "badge": ""
+    "sortOrder": 11
   },
   {
     "id": "p_iphone_16_pro_max",
-    "category": "iphone",
     "name": "iPhone 16 Pro Max",
+    "category": "iphone",
     "subtitle": "Pantalla de 6,9″ · A18 Pro",
     "description": "Explorá el iPhone 16 Pro Max y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
     "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-16-pro-max.jpg",
@@ -316,18 +316,18 @@
       "Conectividad 5G",
       "Puerto USB‑C"
     ],
+    "badge": "",
     "price": 0,
     "currency": "ARS",
     "showPrice": false,
     "published": true,
     "featured": false,
-    "sortOrder": 12,
-    "badge": ""
+    "sortOrder": 12
   },
   {
     "id": "p_iphone_17",
-    "category": "iphone",
     "name": "iPhone 17",
+    "category": "iphone",
     "subtitle": "Pantalla ProMotion de 6,3″ · Chip A19",
     "description": "Explorá el iPhone 17 y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
     "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-17.jpg",
@@ -343,18 +343,18 @@
       "Puerto USB-C",
       "Conectividad 5G"
     ],
+    "badge": "",
     "price": 0,
     "currency": "ARS",
     "showPrice": false,
     "published": true,
     "featured": false,
-    "sortOrder": 13,
-    "badge": ""
+    "sortOrder": 13
   },
   {
     "id": "p_iphone_17_pro",
-    "category": "iphone",
     "name": "iPhone 17 Pro",
+    "category": "iphone",
     "subtitle": "Pantalla ProMotion de 6,3″ · Chip A19 Pro",
     "description": "Explorá el iPhone 17 Pro y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
     "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-17-pro.jpg",
@@ -370,18 +370,18 @@
       "Puerto USB-C",
       "Conectividad 5G"
     ],
+    "badge": "",
     "price": 0,
     "currency": "ARS",
     "showPrice": false,
     "published": true,
     "featured": false,
-    "sortOrder": 14,
-    "badge": ""
+    "sortOrder": 14
   },
   {
     "id": "p_iphone_17_pro_max",
-    "category": "iphone",
     "name": "iPhone 17 Pro Max",
+    "category": "iphone",
     "subtitle": "Pantalla ProMotion de 6,9″ · Chip A19 Pro",
     "description": "Explorá el iPhone 17 Pro Max y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
     "imageUrl": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-17-pro-max.jpg",
@@ -397,18 +397,18 @@
       "Puerto USB-C",
       "Conectividad 5G"
     ],
+    "badge": "",
     "price": 0,
     "currency": "ARS",
     "showPrice": false,
     "published": true,
     "featured": false,
-    "sortOrder": 15,
-    "badge": ""
+    "sortOrder": 15
   },
   {
     "id": "p_iphone_18_pro",
-    "category": "iphone",
     "name": "iPhone 18 Pro",
+    "category": "iphone",
     "subtitle": "Pantalla ProMotion de 6,3″ · Chip A20 Pro",
     "description": "Explorá el iPhone 18 Pro y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
     "imageUrl": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone18-pro-1.jpg",
@@ -424,18 +424,18 @@
       "Conectividad 5G",
       "Face ID"
     ],
+    "badge": "",
     "price": 0,
     "currency": "ARS",
     "showPrice": false,
     "published": true,
     "featured": false,
-    "sortOrder": 16,
-    "badge": ""
+    "sortOrder": 16
   },
   {
     "id": "p_iphone_18_pro_max",
-    "category": "iphone",
     "name": "iPhone 18 Pro Max",
+    "category": "iphone",
     "subtitle": "Pantalla ProMotion de 6,9″ · Chip A20 Pro",
     "description": "Explorá el iPhone 18 Pro Max y consultanos por las opciones disponibles en memoria, color, batería y precio según el stock vigente.",
     "imageUrl": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone18-pro-max-1.jpg",
@@ -451,12 +451,12 @@
       "Conectividad 5G",
       "Face ID"
     ],
+    "badge": "",
     "price": 0,
     "currency": "ARS",
     "showPrice": false,
     "published": true,
     "featured": false,
-    "sortOrder": 17,
-    "badge": ""
+    "sortOrder": 17
   }
 ]
